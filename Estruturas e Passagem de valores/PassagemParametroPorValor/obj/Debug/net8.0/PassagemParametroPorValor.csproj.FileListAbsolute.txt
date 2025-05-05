@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/bin/Debug/net8.0/PassagemParametroPorValor
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/bin/Debug/net8.0/PassagemParametroPorValor.deps.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/bin/Debug/net8.0/PassagemParametroPorValor.runtimeconfig.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/bin/Debug/net8.0/PassagemParametroPorValor.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/bin/Debug/net8.0/PassagemParametroPorValor.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/PassagemParametroPorValor.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/PassagemParametroPorValor.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/PassagemParametroPorValor.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/PassagemParametroPorValor.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/PassagemParametroPorValor.sourcelink.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/PassagemParametroPorValor.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/refint/PassagemParametroPorValor.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/PassagemParametroPorValor.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/PassagemParametroPorValor.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroPorValor/obj/Debug/net8.0/ref/PassagemParametroPorValor.dll
