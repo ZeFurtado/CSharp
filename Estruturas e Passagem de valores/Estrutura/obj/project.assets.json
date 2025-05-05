@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estruturas/Estruturas.csproj",
-      "projectName": "Estruturas",
-      "projectPath": "/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estruturas/Estruturas.csproj",
+      "projectUniqueName": "/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/Estrutura.csproj",
+      "projectName": "Estrutura",
+      "projectPath": "/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/Estrutura.csproj",
       "packagesPath": "/home/lukhas/.nuget/packages/",
-      "outputPath": "/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estruturas/obj/",
+      "outputPath": "/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/lukhas/.nuget/NuGet/NuGet.Config"

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estruturas", "Estruturas\Estruturas.csproj", "{48B4C58C-45D7-4C50-AD29-BAE3F0789E5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estrutura", "Estrutura\Estrutura.csproj", "{637EEDCA-9618-4DC3-A45F-7B5704CB3120}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,5 +28,9 @@ Global
 		{48B4C58C-45D7-4C50-AD29-BAE3F0789E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48B4C58C-45D7-4C50-AD29-BAE3F0789E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48B4C58C-45D7-4C50-AD29-BAE3F0789E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{637EEDCA-9618-4DC3-A45F-7B5704CB3120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{637EEDCA-9618-4DC3-A45F-7B5704CB3120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{637EEDCA-9618-4DC3-A45F-7B5704CB3120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{637EEDCA-9618-4DC3-A45F-7B5704CB3120}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

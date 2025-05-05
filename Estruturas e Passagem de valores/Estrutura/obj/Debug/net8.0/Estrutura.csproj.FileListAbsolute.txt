@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/bin/Debug/net8.0/Estrutura
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/bin/Debug/net8.0/Estrutura.deps.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/bin/Debug/net8.0/Estrutura.runtimeconfig.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/bin/Debug/net8.0/Estrutura.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/bin/Debug/net8.0/Estrutura.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/Estrutura.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/Estrutura.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/Estrutura.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/Estrutura.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/Estrutura.sourcelink.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/Estrutura.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/refint/Estrutura.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/Estrutura.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/Estrutura.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/Estrutura/obj/Debug/net8.0/ref/Estrutura.dll

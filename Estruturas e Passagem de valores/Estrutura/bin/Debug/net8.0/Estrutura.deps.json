@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Estruturas/1.0.0": {
+      "Estrutura/1.0.0": {
         "runtime": {
-          "Estruturas.dll": {}
+          "Estrutura.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Estruturas/1.0.0": {
+    "Estrutura/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
