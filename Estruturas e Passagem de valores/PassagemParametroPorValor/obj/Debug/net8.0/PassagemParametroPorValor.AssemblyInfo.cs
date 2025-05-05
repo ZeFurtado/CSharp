@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Estrutura")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("PassagemParametroPorValor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52fef6c3be95e52e57148e7bfa2a1e8c7672dd62")]
-[assembly: System.Reflection.AssemblyProductAttribute("Estrutura")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Estrutura")]
+[assembly: System.Reflection.AssemblyProductAttribute("PassagemParametroPorValor")]
+[assembly: System.Reflection.AssemblyTitleAttribute("PassagemParametroPorValor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

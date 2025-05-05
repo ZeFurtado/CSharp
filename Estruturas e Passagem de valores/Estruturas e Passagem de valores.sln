@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estruturas", "Estruturas\Es
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estrutura", "Estrutura\Estrutura.csproj", "{637EEDCA-9618-4DC3-A45F-7B5704CB3120}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassagemParametroPorValor", "PassagemParametroPorValor\PassagemParametroPorValor.csproj", "{E8414B93-6FED-4C6B-8FD3-43CB4E201B1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,5 +34,9 @@ Global
 		{637EEDCA-9618-4DC3-A45F-7B5704CB3120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{637EEDCA-9618-4DC3-A45F-7B5704CB3120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{637EEDCA-9618-4DC3-A45F-7B5704CB3120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8414B93-6FED-4C6B-8FD3-43CB4E201B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8414B93-6FED-4C6B-8FD3-43CB4E201B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8414B93-6FED-4C6B-8FD3-43CB4E201B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8414B93-6FED-4C6B-8FD3-43CB4E201B1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

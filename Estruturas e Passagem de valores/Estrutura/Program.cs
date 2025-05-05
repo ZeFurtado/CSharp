@@ -4,7 +4,9 @@
     {
         static void Main()
         {
-            Console.WriteLine("Samanta");
+            Polegada polegada = new Polegada(10);
+            Console.WriteLine(polegada.getPolegada());
+            Console.ReadKey();
         }
     }
 }
