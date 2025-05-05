@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/bin/Debug/net8.0/PassagemParametroReferencia
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/bin/Debug/net8.0/PassagemParametroReferencia.deps.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/bin/Debug/net8.0/PassagemParametroReferencia.runtimeconfig.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/bin/Debug/net8.0/PassagemParametroReferencia.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/bin/Debug/net8.0/PassagemParametroReferencia.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/PassagemParametroReferencia.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/PassagemParametroReferencia.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/PassagemParametroReferencia.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/PassagemParametroReferencia.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/PassagemParametroReferencia.sourcelink.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/PassagemParametroReferencia.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/refint/PassagemParametroReferencia.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/PassagemParametroReferencia.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/PassagemParametroReferencia.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroReferencia/obj/Debug/net8.0/ref/PassagemParametroReferencia.dll
