@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/bin/Debug/net8.0/PassagemParametroOut
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/bin/Debug/net8.0/PassagemParametroOut.deps.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/bin/Debug/net8.0/PassagemParametroOut.runtimeconfig.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/bin/Debug/net8.0/PassagemParametroOut.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/bin/Debug/net8.0/PassagemParametroOut.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/PassagemParametroOut.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/PassagemParametroOut.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/PassagemParametroOut.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/PassagemParametroOut.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/PassagemParametroOut.sourcelink.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/PassagemParametroOut.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/refint/PassagemParametroOut.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/PassagemParametroOut.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/PassagemParametroOut.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroOut/obj/Debug/net8.0/ref/PassagemParametroOut.dll
