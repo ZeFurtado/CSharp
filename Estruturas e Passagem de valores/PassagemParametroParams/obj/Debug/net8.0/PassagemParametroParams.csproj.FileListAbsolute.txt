@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/bin/Debug/net8.0/PassagemParametroParams
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/bin/Debug/net8.0/PassagemParametroParams.deps.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/bin/Debug/net8.0/PassagemParametroParams.runtimeconfig.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/bin/Debug/net8.0/PassagemParametroParams.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/bin/Debug/net8.0/PassagemParametroParams.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/PassagemParametroParams.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/PassagemParametroParams.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/PassagemParametroParams.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/PassagemParametroParams.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/PassagemParametroParams.sourcelink.json
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/PassagemParametroParams.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/refint/PassagemParametroParams.dll
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/PassagemParametroParams.pdb
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/PassagemParametroParams.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/Estruturas e Passagem de valores/PassagemParametroParams/obj/Debug/net8.0/ref/PassagemParametroParams.dll
