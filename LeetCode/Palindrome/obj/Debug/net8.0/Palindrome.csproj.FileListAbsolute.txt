@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/bin/Debug/net8.0/Palindrome
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/bin/Debug/net8.0/Palindrome.deps.json
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/bin/Debug/net8.0/Palindrome.runtimeconfig.json
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/bin/Debug/net8.0/Palindrome.dll
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/bin/Debug/net8.0/Palindrome.pdb
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/Palindrome.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/Palindrome.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/Palindrome.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/Palindrome.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/Palindrome.sourcelink.json
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/Palindrome.dll
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/refint/Palindrome.dll
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/Palindrome.pdb
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/Palindrome.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/LeetCode/Palindrome/obj/Debug/net8.0/ref/Palindrome.dll
