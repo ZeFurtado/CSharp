@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RazorSql")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+412bf30bfd255fd70c5e7598792e494429b27d1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9dec0aa870be6f94655313ef488f171bade28c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("RazorSql")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RazorSql")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
