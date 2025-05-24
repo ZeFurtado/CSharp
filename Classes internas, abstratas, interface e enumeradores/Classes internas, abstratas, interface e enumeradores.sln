@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasseParcial", "ClasseParc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodoParcial", "MetodoParcial\MetodoParcial.csproj", "{3720B4AF-B085-4AE9-8638-5A15A2FF933E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasseAbstrata", "ClasseAbstrata\ClasseAbstrata.csproj", "{FD01AFF3-0FD3-44D6-8272-6111F1494F74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{3720B4AF-B085-4AE9-8638-5A15A2FF933E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3720B4AF-B085-4AE9-8638-5A15A2FF933E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3720B4AF-B085-4AE9-8638-5A15A2FF933E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD01AFF3-0FD3-44D6-8272-6111F1494F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD01AFF3-0FD3-44D6-8272-6111F1494F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD01AFF3-0FD3-44D6-8272-6111F1494F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD01AFF3-0FD3-44D6-8272-6111F1494F74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
