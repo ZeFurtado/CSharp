@@ -5,7 +5,7 @@ public class Program
 {
     static void Main()
     {
-        Veiculo veiculo = new Veiculo();
+        Veiculo veiculo = new Veiculo(); //Não é possível instanciar classes abstratas
         Carro carro = new Carro();
         Caminhao caminhao = new Caminhao();
     }
