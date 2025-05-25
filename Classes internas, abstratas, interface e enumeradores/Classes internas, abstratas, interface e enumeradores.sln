@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodoParcial", "MetodoParc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasseAbstrata", "ClasseAbstrata\ClasseAbstrata.csproj", "{FD01AFF3-0FD3-44D6-8272-6111F1494F74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodoAbstrato", "MetodoAbstrato\MetodoAbstrato.csproj", "{4313D26E-BC79-46BE-8097-AE6CDC2BCF75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropriedadeAbstrata", "PropriedadeAbstrata\PropriedadeAbstrata.csproj", "{3B7F3EFA-6995-4040-BCDF-491C36CDFC4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{FD01AFF3-0FD3-44D6-8272-6111F1494F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD01AFF3-0FD3-44D6-8272-6111F1494F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD01AFF3-0FD3-44D6-8272-6111F1494F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4313D26E-BC79-46BE-8097-AE6CDC2BCF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4313D26E-BC79-46BE-8097-AE6CDC2BCF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4313D26E-BC79-46BE-8097-AE6CDC2BCF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4313D26E-BC79-46BE-8097-AE6CDC2BCF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B7F3EFA-6995-4040-BCDF-491C36CDFC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7F3EFA-6995-4040-BCDF-491C36CDFC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7F3EFA-6995-4040-BCDF-491C36CDFC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7F3EFA-6995-4040-BCDF-491C36CDFC4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
