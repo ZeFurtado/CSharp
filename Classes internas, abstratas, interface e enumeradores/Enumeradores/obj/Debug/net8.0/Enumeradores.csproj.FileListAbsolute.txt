@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/bin/Debug/net8.0/Enumeradores
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/bin/Debug/net8.0/Enumeradores.deps.json
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/bin/Debug/net8.0/Enumeradores.runtimeconfig.json
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/bin/Debug/net8.0/Enumeradores.dll
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/bin/Debug/net8.0/Enumeradores.pdb
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/Enumeradores.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/Enumeradores.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/Enumeradores.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/Enumeradores.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/Enumeradores.sourcelink.json
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/Enumeradores.dll
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/refint/Enumeradores.dll
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/Enumeradores.pdb
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/Enumeradores.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/Enumeradores/obj/Debug/net8.0/ref/Enumeradores.dll

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropriedadeAbstrata", "Prop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Interface", "_Interface\_Interface.csproj", "{B280B083-E181-4377-B251-808DD12C8B6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumeradores", "Enumeradores\Enumeradores.csproj", "{049335FA-9D2A-49B9-8B58-BC92C8893027}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{B280B083-E181-4377-B251-808DD12C8B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B280B083-E181-4377-B251-808DD12C8B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B280B083-E181-4377-B251-808DD12C8B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049335FA-9D2A-49B9-8B58-BC92C8893027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049335FA-9D2A-49B9-8B58-BC92C8893027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049335FA-9D2A-49B9-8B58-BC92C8893027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049335FA-9D2A-49B9-8B58-BC92C8893027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
