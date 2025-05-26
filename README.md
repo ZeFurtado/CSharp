@@ -1,1 +1,1 @@
-Repositório criado para explorar recursos da linguagem c# e registrar meu progresso com a linguagem.
+Repositório criado para explorar recursos do c# e registrar meu progresso com a linguagem.
