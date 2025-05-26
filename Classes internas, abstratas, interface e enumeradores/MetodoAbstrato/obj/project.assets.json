@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoParcial/MetodoParcial.csproj",
-      "projectName": "MetodoParcial",
-      "projectPath": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoParcial/MetodoParcial.csproj",
+      "projectUniqueName": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoAbstrato/MetodoAbstrato.csproj",
+      "projectName": "MetodoAbstrato",
+      "projectPath": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoAbstrato/MetodoAbstrato.csproj",
       "packagesPath": "/home/lukhas/.nuget/packages/",
-      "outputPath": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoParcial/obj/",
+      "outputPath": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoAbstrato/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/lukhas/.nuget/NuGet/NuGet.Config"

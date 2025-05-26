@@ -1,6 +1,6 @@
 ﻿namespace ClasseParcial;
 
-public class Pessoa
+public partial class Pessoa
 {
-
+    string nome;
 }

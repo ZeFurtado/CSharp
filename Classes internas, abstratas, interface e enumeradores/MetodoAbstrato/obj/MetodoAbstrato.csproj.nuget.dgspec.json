@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/ClasseParcial/ClasseParcial.csproj": {}
+    "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoAbstrato/MetodoAbstrato.csproj": {}
   },
   "projects": {
-    "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/ClasseParcial/ClasseParcial.csproj": {
+    "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoAbstrato/MetodoAbstrato.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/ClasseParcial/ClasseParcial.csproj",
-        "projectName": "ClasseParcial",
-        "projectPath": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/ClasseParcial/ClasseParcial.csproj",
+        "projectUniqueName": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoAbstrato/MetodoAbstrato.csproj",
+        "projectName": "MetodoAbstrato",
+        "projectPath": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoAbstrato/MetodoAbstrato.csproj",
         "packagesPath": "/home/lukhas/.nuget/packages/",
-        "outputPath": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/ClasseParcial/obj/",
+        "outputPath": "/home/lukhas/repo/CSharp/Classes internas, abstratas, interface e enumeradores/MetodoAbstrato/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/lukhas/.nuget/NuGet/NuGet.Config"

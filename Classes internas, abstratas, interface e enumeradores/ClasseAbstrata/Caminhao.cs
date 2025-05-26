@@ -1,6 +1,6 @@
 ﻿namespace ClasseAbstrata;
 
-public class Caminhao
+public class Caminhao :  Veiculo
 {
 
 }

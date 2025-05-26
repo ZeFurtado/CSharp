@@ -1,6 +1,6 @@
 ﻿namespace ClasseAbstrata;
 
-public class Veiculo
+public abstract class Veiculo
 {
     string Marca;
     string Modelo;
