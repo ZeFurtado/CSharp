@@ -18,6 +18,6 @@ public class PlantasModel : PageModel
     
     public async Task OnGetAsync()
     {
-        //Plantas = await _context.Plantas.ToListAsync();
+        Plantas = await _context.Plantas.ToListAsync();
     }
 }
