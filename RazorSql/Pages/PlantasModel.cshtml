@@ -4,7 +4,19 @@
     ViewData["Title"] = "Plantas";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Plantas</h1>
-    <p>Em construção... <a href="https://github.com/ZeFurtado/CSharp">github.com/ZeFurtado/CSharp</a>.</p>
-</div>
+<h2>Lista de Plantas</h2>>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Preço</th>
+    </tr>
+    @foreach (var plantas in Model.Plantas)
+    {
+        <tr>
+            <td>@plantas.Id</td>
+            <td>@plantas.Nome</td>
+            <td>@plantas.Preco</td>
+        </tr>
+    }
+</table>
