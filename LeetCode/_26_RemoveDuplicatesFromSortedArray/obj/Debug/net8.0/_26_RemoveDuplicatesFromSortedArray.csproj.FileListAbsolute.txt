@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/bin/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/bin/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.deps.json
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/bin/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.runtimeconfig.json
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/bin/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.dll
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/bin/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.pdb
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.sourcelink.json
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.dll
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/refint/_26_RemoveDuplicatesFromSortedArray.dll
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.pdb
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/_26_RemoveDuplicatesFromSortedArray.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/LeetCode/_26_RemoveDuplicatesFromSortedArray/obj/Debug/net8.0/ref/_26_RemoveDuplicatesFromSortedArray.dll
