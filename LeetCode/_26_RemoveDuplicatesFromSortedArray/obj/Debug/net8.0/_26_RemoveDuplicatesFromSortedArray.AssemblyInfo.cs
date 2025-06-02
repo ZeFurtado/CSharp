@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("_26_RemoveDuplicatesFromSortedArray")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15347f27a87c765665094c9f3371ca375bdfd8c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+644f4f6b591fc59067de5d4e26ad8407422f5d6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("_26_RemoveDuplicatesFromSortedArray")]
 [assembly: System.Reflection.AssemblyTitleAttribute("_26_RemoveDuplicatesFromSortedArray")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -10,7 +10,7 @@ static class Solution
 
         do
         {
-            if (nums[a] == nums[b] && b <= nums.Length - 1)
+            if (nums[a] == nums[b])
             {
                 nums[b] = nums[b + 1];
             }
@@ -19,13 +19,13 @@ static class Solution
                 a++;
                 b++;
             }
-            
 
+            Console.WriteLine("Loop?");
         } while (b < nums.Length);
 
         //0,0,1,1,1,2,2,3,3,4
 
-        foreach (var n in nums)
+        foreach (int n in nums)
         {
             Console.WriteLine("- " + n);
         }
