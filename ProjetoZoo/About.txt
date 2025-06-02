@@ -1,0 +1,68 @@
+🎯 Desafio: Sistema de Gestão de Animais em um Zoológico
+🧠 Objetivo:
+
+Criar um sistema para gerenciar os animais de um zoológico. O sistema deve ser capaz de cadastrar diferentes tipos de animais, exibir informações específicas de cada um e realizar ações que variam de acordo com o tipo do animal.
+
+✅ Requisitos obrigatórios:
+1. Crie uma interface IAnimal com os seguintes métodos:
+
+void EmitirSom();
+void Comer();
+
+2. Crie uma classe abstrata Animal que implemente IAnimal e contenha:
+
+    Propriedades comuns: Nome, Idade, Especie
+
+    Um construtor para inicializar as propriedades
+
+    Um método virtual ExibirInfo() que imprime essas informações
+
+3. Crie pelo menos três classes concretas que herdam de Animal:
+
+    Leao
+
+    Elefante
+
+    Macaco
+
+Cada uma deve:
+
+    Sobrescrever os métodos EmitirSom() e Comer() com comportamentos específicos
+
+    Se necessário, sobrescrever ExibirInfo() para incluir informações adicionais
+
+4. Use polimorfismo:
+
+    Crie uma lista de Animal com diferentes tipos (Leão, Elefante, Macaco)
+
+    Percorra essa lista e chame EmitirSom(), Comer() e ExibirInfo() para cada um
+
+🧪 Exemplo de Saída Esperada:
+
+[Leão Simba]
+Espécie: Leão
+Idade: 5
+Rugindo: ROAAAR!
+Comendo carne...
+
+[Elefante Dumbo]
+Espécie: Elefante
+Idade: 10
+Barulho: Prrrrrrrr!
+Comendo folhas e frutas...
+
+[Macaco George]
+Espécie: Macaco
+Idade: 3
+Gritando: OOH OOH AAH AAH!
+Comendo bananas...
+
+🚀 Extras (opcionais, para desafiar mais):
+
+    Adicione uma nova interface ICuidavel com método RealizarCuidados()
+
+    Implemente essa interface apenas nos animais que precisam de cuidados especiais
+
+    Adicione uma classe Zoologico com métodos para adicionar animais e cuidar deles
+
+Se quiser, posso revisar seu código quando estiver pronto ou ajudá-lo com dicas durante o desenvolvimento. Deseja que eu gere um esqueleto inicial do código?

@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/ProjetoZoo/bin/Debug/net8.0/ProjetoZoo
+/home/lukhas/repo/CSharp/ProjetoZoo/bin/Debug/net8.0/ProjetoZoo.deps.json
+/home/lukhas/repo/CSharp/ProjetoZoo/bin/Debug/net8.0/ProjetoZoo.runtimeconfig.json
+/home/lukhas/repo/CSharp/ProjetoZoo/bin/Debug/net8.0/ProjetoZoo.dll
+/home/lukhas/repo/CSharp/ProjetoZoo/bin/Debug/net8.0/ProjetoZoo.pdb
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/ProjetoZoo.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/ProjetoZoo.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/ProjetoZoo.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/ProjetoZoo.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/ProjetoZoo.sourcelink.json
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/ProjetoZoo.dll
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/refint/ProjetoZoo.dll
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/ProjetoZoo.pdb
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/ProjetoZoo.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/ProjetoZoo/obj/Debug/net8.0/ref/ProjetoZoo.dll
