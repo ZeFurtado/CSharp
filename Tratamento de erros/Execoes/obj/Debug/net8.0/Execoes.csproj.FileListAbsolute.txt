@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/bin/Debug/net8.0/Execoes
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/bin/Debug/net8.0/Execoes.deps.json
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/bin/Debug/net8.0/Execoes.runtimeconfig.json
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/bin/Debug/net8.0/Execoes.dll
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/bin/Debug/net8.0/Execoes.pdb
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/Execoes.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/Execoes.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/Execoes.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/Execoes.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/Execoes.sourcelink.json
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/Execoes.dll
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/refint/Execoes.dll
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/Execoes.pdb
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/Execoes.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/Debug/net8.0/ref/Execoes.dll
