@@ -3,7 +3,7 @@
 class Program
 {
     static void Main()
-    {
+    {-
         try
         {
             Pessoa pessoa = new Pessoa();
@@ -16,6 +16,10 @@ class Program
         catch (Exception excep)
         {
             Console.WriteLine("Erro " + excep.Message);
+        }
+        finally
+        { 
+
         }
         Console.ReadKey();
     }
