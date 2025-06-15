@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/bin/Debug/net8.0/TratandoException
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/bin/Debug/net8.0/TratandoException.deps.json
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/bin/Debug/net8.0/TratandoException.runtimeconfig.json
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/bin/Debug/net8.0/TratandoException.dll
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/bin/Debug/net8.0/TratandoException.pdb
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/TratandoException.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/TratandoException.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/TratandoException.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/TratandoException.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/TratandoException.sourcelink.json
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/TratandoException.dll
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/refint/TratandoException.dll
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/TratandoException.pdb
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/TratandoException.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/Debug/net8.0/ref/TratandoException.dll

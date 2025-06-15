@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/Execoes.csproj",
-      "projectName": "Execoes",
-      "projectPath": "/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/Execoes.csproj",
+      "projectUniqueName": "/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/TratandoException.csproj",
+      "projectName": "TratandoException",
+      "projectPath": "/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/TratandoException.csproj",
       "packagesPath": "/home/lukhas/.nuget/packages/",
-      "outputPath": "/home/lukhas/repo/CSharp/Tratamento de erros/Execoes/obj/",
+      "outputPath": "/home/lukhas/repo/CSharp/Tratamento de erros/TratandoException/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/lukhas/.nuget/NuGet/NuGet.Config"

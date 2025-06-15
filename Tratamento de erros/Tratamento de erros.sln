@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execoes", "Execoes\Execoes.csproj", "{33536A41-DF6F-46A1-8EC3-550FDEBFDCDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TratandoException", "TratandoException\TratandoException.csproj", "{6507CD50-D9E0-4B6D-A61A-414CFB4F7F1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{33536A41-DF6F-46A1-8EC3-550FDEBFDCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33536A41-DF6F-46A1-8EC3-550FDEBFDCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33536A41-DF6F-46A1-8EC3-550FDEBFDCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6507CD50-D9E0-4B6D-A61A-414CFB4F7F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6507CD50-D9E0-4B6D-A61A-414CFB4F7F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6507CD50-D9E0-4B6D-A61A-414CFB4F7F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6507CD50-D9E0-4B6D-A61A-414CFB4F7F1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
