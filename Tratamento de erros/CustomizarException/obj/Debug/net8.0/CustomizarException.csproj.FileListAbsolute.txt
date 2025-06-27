@@ -1,0 +1,15 @@
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/bin/Debug/net8.0/CustomizarException
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/bin/Debug/net8.0/CustomizarException.deps.json
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/bin/Debug/net8.0/CustomizarException.runtimeconfig.json
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/bin/Debug/net8.0/CustomizarException.dll
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/bin/Debug/net8.0/CustomizarException.pdb
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/CustomizarException.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/CustomizarException.AssemblyInfoInputs.cache
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/CustomizarException.AssemblyInfo.cs
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/CustomizarException.csproj.CoreCompileInputs.cache
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/CustomizarException.sourcelink.json
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/CustomizarException.dll
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/refint/CustomizarException.dll
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/CustomizarException.pdb
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/CustomizarException.genruntimeconfig.cache
+/home/lukhas/repo/CSharp/Tratamento de erros/CustomizarException/obj/Debug/net8.0/ref/CustomizarException.dll

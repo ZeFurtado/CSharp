@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execoes", "Execoes\Execoes.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TratandoException", "TratandoException\TratandoException.csproj", "{6507CD50-D9E0-4B6D-A61A-414CFB4F7F1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizarException", "CustomizarException\CustomizarException.csproj", "{9F23915F-3AD3-457C-A59F-C2D03B893639}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{6507CD50-D9E0-4B6D-A61A-414CFB4F7F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6507CD50-D9E0-4B6D-A61A-414CFB4F7F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6507CD50-D9E0-4B6D-A61A-414CFB4F7F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F23915F-3AD3-457C-A59F-C2D03B893639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F23915F-3AD3-457C-A59F-C2D03B893639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F23915F-3AD3-457C-A59F-C2D03B893639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F23915F-3AD3-457C-A59F-C2D03B893639}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
