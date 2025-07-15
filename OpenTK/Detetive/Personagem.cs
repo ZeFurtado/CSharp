@@ -5,9 +5,11 @@ public class Personagem
     public string Nome { get; set; }
     public string Cor { get; set; }
 
-    public Personagem(string Nome, string Cor)
+    public string PosInicial { get; set; }
+
+    public Personagem(string nome, string cor)
     {
-        this.Nome = Nome;
-        this.Cor = Cor;
+        Nome = nome;
+        Cor = cor;
     }
 }
