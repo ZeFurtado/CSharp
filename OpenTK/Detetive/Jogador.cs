@@ -1,13 +1,35 @@
-﻿namespace Detetive;
+﻿using System.Globalization;
+
+namespace Detetive;
 
 public class Jogador
 {
     public string Nome { get; set; }
-    public List<Carta> Cartas { get; set; }
+    public List<Carta>? Cartas { get; set; }
 
-    public Jogador(string nome, List<Carta> cartas)
+    public Personagem Personagem { get; set; }
+
+
+    public Jogador(string nome, Personagem personagem)
     {
         Nome = nome;
+        Personagem = personagem;
+    }
+
+    public Jogador(string nome, Personagem personagem, List<Carta> cartas)
+    {
+        Nome = nome;
+        Personagem = personagem;
         Cartas = cartas;
+    }
+
+    public int JogarDado()
+    {
+        return 6;
+    }
+
+    public string MoverPeao(string posInicial)
+    {
+        return "b2";
     }
 }
