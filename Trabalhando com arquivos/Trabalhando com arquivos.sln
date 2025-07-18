@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscreverArquivo", "EscreverArquivo\EscreverArquivo.csproj", "{8756EE4E-7829-4CA7-9E06-A15999ED5D3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LerArquivo", "LerArquivo\LerArquivo.csproj", "{DFC9B7A8-2869-49E7-8D57-44FEAF146550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscreverArquivoComUsing", "EscreverArquivoComUsing\EscreverArquivoComUsing.csproj", "{36A62137-7D07-4EA2-AC42-0F611A37A2B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{8756EE4E-7829-4CA7-9E06-A15999ED5D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8756EE4E-7829-4CA7-9E06-A15999ED5D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8756EE4E-7829-4CA7-9E06-A15999ED5D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC9B7A8-2869-49E7-8D57-44FEAF146550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC9B7A8-2869-49E7-8D57-44FEAF146550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC9B7A8-2869-49E7-8D57-44FEAF146550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC9B7A8-2869-49E7-8D57-44FEAF146550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A62137-7D07-4EA2-AC42-0F611A37A2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A62137-7D07-4EA2-AC42-0F611A37A2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A62137-7D07-4EA2-AC42-0F611A37A2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A62137-7D07-4EA2-AC42-0F611A37A2B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
