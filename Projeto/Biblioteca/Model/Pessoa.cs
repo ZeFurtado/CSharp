@@ -12,5 +12,5 @@ public abstract class Pessoa
     public string Estado { get; set; }
     public string Cidade { get; set; }
     public string Endereco { get; set; }
-    
+
 }
