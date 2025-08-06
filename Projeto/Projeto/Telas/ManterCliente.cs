@@ -29,7 +29,7 @@ public class ManterCliente
         cliente.RG = Console.ReadLine();
 
         Console.WriteLine("CEP: ");
-        cliente.CEP = Console.ReadLine();
+        cliente.CEP = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Estado: ");
         cliente.Estado = Console.ReadLine();
