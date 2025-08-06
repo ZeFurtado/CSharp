@@ -4,12 +4,11 @@ namespace Biblioteca.Arquivo;
 
 public class GerenciadorArquivo
 {
-    public void GravarArquivo(string nomeArquivo, string texto)
+    public static void GravarArquivo(string nomeArquivo, string texto)
     {
+        string caminho = $"/home/lukhas/repo/CSharp/Projeto/{nomeArquivo}.txt";
         try
         {
-            string caminho = $"/home/lukhas/repo/CSharp/Projeto/{nomeArquivo}.txt";
-
             if (File.Exists(caminho))
             {
                 throw new IOException();
@@ -19,7 +18,7 @@ public class GerenciadorArquivo
                 using (StreamWriter arquivo = new StreamWriter(caminho))
                 {
                     arquivo.WriteLine(texto);
-
+                    Console.WriteLine($"O arquivo '{nomeArquivo}' foi criado com sucesso!!");
                     arquivo.Close();
                 }
             }
@@ -27,9 +26,32 @@ public class GerenciadorArquivo
         catch (IOException)
         {
             Console.WriteLine($"Já existe um arquivo com nome: {nomeArquivo}" +
-                               "\n O conteúdo do arquivo será sobrescrito");
-            GravarArquivo(nomeArquivo, texto);
+                               "\n O texto será adicionado ao conteúdo já existente no arquivo");
+            using (StreamWriter arquivo = File.AppendText(caminho))
+            {
+                arquivo.WriteLine(texto);
+                Console.WriteLine($"O arquivo '{nomeArquivo}' foi adicionado com sucesso!");
+                arquivo.Close();
+            }
         }
     }
-    
+
+    public static string[] LerArquivo(string nomeArquivo)
+    {
+        string caminho = $"/home/lukhas/repo/CSharp/Projeto/{nomeArquivo}.txt";
+
+        if (!File.Exists(caminho)) throw new IOException();
+
+        try
+        {
+            return File.ReadAllLines(caminho);
+        }
+        catch (IOException)
+        {
+            Console.WriteLine("O arquivo não existe!!!"); 
+            return ["Arquivo não existe"]; 
+        }
+
+        
+    }
 }
