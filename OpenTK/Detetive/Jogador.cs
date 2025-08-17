@@ -2,7 +2,7 @@
 
 namespace Detetive;
 
-public class Jogador
+public sealed class Jogador
 {
     public string Nome { get; set; }
     public List<Carta>? Cartas { get; set; }
@@ -28,7 +28,7 @@ public class Jogador
         return 6;
     }
 
-    public string MoverPeao(string posInicial)
+    public string MoverPeao(Bloco posAtual)
     {
         return "b2";
     }
