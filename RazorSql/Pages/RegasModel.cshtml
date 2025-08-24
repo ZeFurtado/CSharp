@@ -1,0 +1,26 @@
+@page
+@model RegasModel
+@{
+    ViewData["Title"] = "Regas";
+}
+
+<h2> Regas </h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Ciclo</th>
+        <th>Data da rega</th>
+        <th>pH</th>
+        <th>Quantidade de água utilizada</th>
+    </tr>
+    @foreach(var regas in Model.Regas)
+    {  
+        <tr>
+            <td>@regas.Id</td>
+            <td>@regas.Ciclo_Id</td>
+            <td>@regas.Data_Rega</td>
+            <td>@regas.PH</td>
+            <td>@regas.Agua_Utilizada_ml</td>
+        </tr>
+    }
+</table>
