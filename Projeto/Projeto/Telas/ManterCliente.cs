@@ -1,4 +1,6 @@
-﻿using Biblioteca.Model;
+﻿using Biblioteca.Arquivo;
+using Biblioteca.Model;
+using Projeto.Conversores;
 
 namespace Projeto.Telas;
 
@@ -40,13 +42,25 @@ public class ManterCliente
         Console.WriteLine("Endereço: ");
         cliente.Endereco = Console.ReadLine();
 
-        
+        GerenciadorArquivo.GravarArquivo("Arquivo", ClienteTexto.ConverterParaTexto(cliente));
     }
 
     public void ListarClientes()
     {
-        Cliente cliente = new Cliente();
-        Console.WriteLine(cliente.Nome);
+        Console.Clear();
+        Console.WriteLine("Digite o nome do arquivo: ");
+        string nomeArquivo = Console.ReadLine();
+        try
+        {
+            string caminho = $"/home/lukhas/repo/CSharp/Projeto/{nomeArquivo}.txt";
+            if (!File.Exists(caminho)) throw new IOException();
+
+            string[] clientes = File.ReadAllLines(caminho);
+        }
+        catch (IOException)
+        {
+            Console.WriteLine("O arquivo não existe!!!");
+        }
     }
 
 }
