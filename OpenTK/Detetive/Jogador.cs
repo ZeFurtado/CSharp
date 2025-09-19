@@ -5,7 +5,7 @@ namespace Detetive;
 public sealed class Jogador
 {
     public string Nome { get; set; }
-    public List<Carta>? Cartas { get; set; }
+    public Arma Arma { get; set; }
 
     public Personagem Personagem { get; set; }
 
@@ -16,11 +16,11 @@ public sealed class Jogador
         Personagem = personagem;
     }
 
-    public Jogador(string nome, Personagem personagem, List<Carta> cartas)
+    public Jogador(string nome, Personagem personagem, Arma arma)
     {
         Nome = nome;
         Personagem = personagem;
-        Cartas = cartas;
+        Arma = arma;
     }
 
     public int JogarDado()
