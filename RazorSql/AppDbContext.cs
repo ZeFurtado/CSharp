@@ -10,4 +10,13 @@ public class AppDbContext : DbContext
 
     public DbSet<Plantas> Plantas { get; set; }
     public DbSet<Regas> Regas { get; set; }
+    public DbSet<Ciclos> Ciclos { get; set; }
+
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.LogTo(Console.WriteLine, LogLevel.Information);
+    }
+ 
+    
 }
