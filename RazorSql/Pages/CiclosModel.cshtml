@@ -1,0 +1,34 @@
+@page
+@model CiclosModel
+@{
+    ViewData["Title"] = "Ciclos";
+}
+
+<h2>Ciclos </h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Data Início</th>
+        <th>Data Fim</th>
+        <th>Início Vega</th>
+        <th>Início Flora</th>
+        <th>Ativo?</th>
+        <th>Redimento da Colheita (g)</th>
+    </tr>
+
+    @foreach(var ciclos in Model.Ciclos)
+    {
+        <tr>
+            <td>@ciclos.Id</td>
+            <td>@ciclos.Nome</td>
+            <td>@ciclos.Data_Inicio</td>
+            <td>@ciclos.Data_fim</td>
+            <td>@ciclos.Inicio_vega</td>
+            <td>@ciclos.Inicio_flora</td>
+            <td>@ciclos.Ativo</td>
+            <td>@ciclos.Rendimento_colheita_g</td>
+            <>
+        </tr>
+    }
+</table>
