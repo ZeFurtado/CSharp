@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/lukhas/repo/CSharp/RazorSql
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/lukhas/repo/CSharp/RazorSql/Pages/CiclosModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2ljbG9zTW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/lukhas/repo/CSharp/RazorSql/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
