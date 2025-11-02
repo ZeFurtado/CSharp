@@ -17,34 +17,34 @@ public class Program
                           "(3) = Cadastrar funcionário \n(4) = Listar funcionário  \n(5) = Sair do programa");
             opcoes = int.Parse(Console.ReadLine());
 
+                switch (opcoes)
+                {
+                    case 1:
+                        telaCliente.CadastrarCliente();
+                        break;
 
-            switch (opcoes)
-            {
-                case 1:
-                    telaCliente.CadastrarCliente();
-                    break;
+                    case 2:
+                        telaCliente.ListarClientes();
+                        break;
 
-                case 2:
-                    telaCliente.ListarClientes();
-                    break;
+                    case 3:
+                        telaFuncionario.CadastrarFuncionario();
+                        break;
 
-                case 3:
-                    telaFuncionario.CadastrarFuncionario();
-                    break;
+                    case 4:
+                        telaFuncionario.ListarFuncionarios();
+                        break;
 
-                case 4:
-                    telaFuncionario.ListarFuncionarios();
-                    break;
+                    case 5:
+                        Console.WriteLine("Adeus..");
+                        break;
 
-                case 5:
-                    Console.WriteLine("Adeus..");
-                    break;
-
-                default:
-                    Console.WriteLine("Opção não é válida!!!");
-                    opcoes = 0;
-                    break;
-            }
+                    default:
+                        Console.WriteLine("Opção não é válida!!!");
+                        opcoes = 0;
+                        break;
+                }
+             
         }
         
     }
