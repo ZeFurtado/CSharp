@@ -3,7 +3,7 @@ namespace Biblioteca.Model;
 public abstract class Pessoa
 {
     public string Nome { get; set; }
-    public DateTime DataNascimento;
+    private DateTime DataNascimento;
     public string Telefone { get; set; }
     public string CPF { get; set; }
     public string RG { get; set; }
@@ -14,17 +14,17 @@ public abstract class Pessoa
     public string Endereco { get; set; }
 
 
-    public void setDataNascimento(DateTime dataNascimento)
+    public void setDataNascimento(string dataNascimento)
     {
         try
-        {
-            DataNascimento = dataNascimento;
+        {    
+            DataNascimento = DateTime.Parse(dataNascimento);
         }
         catch (FormatException)
         {
-            Console.WriteLine("O formato da data está válido.");
+            Console.WriteLine("O formato da data é inválido.");
             Console.WriteLine("Data de Nascimento: ");
-            setDataNascimento(DateTime.Parse(Console.ReadLine()));
+            setDataNascimento(Console.ReadLine());
         }
     }
 
