@@ -18,7 +18,7 @@ public class ManterCliente
             cliente.Nome = Console.ReadLine();
 
             Console.WriteLine("Data de Nascimento: ");
-            cliente.DataNascimento = DateTime.Parse(Console.ReadLine());
+            cliente.setDataNascimento(Console.ReadLine());
 
             Console.WriteLine("Telefone: ");
             cliente.Telefone = Console.ReadLine();
