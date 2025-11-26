@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstrutorRapido", "ConstrutorRapido\ConstrutorRapido.csproj", "{81386663-2882-4918-98BB-C18BF5C74C42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_AutoImplementPropertyAtribuir", "_AutoImplementPropertyAtribuir\_AutoImplementPropertyAtribuir.csproj", "{13ABC36A-A618-44E9-A805-9AC35A514527}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81386663-2882-4918-98BB-C18BF5C74C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81386663-2882-4918-98BB-C18BF5C74C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81386663-2882-4918-98BB-C18BF5C74C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81386663-2882-4918-98BB-C18BF5C74C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13ABC36A-A618-44E9-A805-9AC35A514527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13ABC36A-A618-44E9-A805-9AC35A514527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13ABC36A-A618-44E9-A805-9AC35A514527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13ABC36A-A618-44E9-A805-9AC35A514527}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
