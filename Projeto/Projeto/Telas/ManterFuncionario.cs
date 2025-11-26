@@ -45,6 +45,26 @@ public class ManterFuncionario
 
     public void ListarFuncionarios()
     {
+        Console.Clear();
+        Console.WriteLine("Digite o nome do arquivo: ");
+        string nomeArquivo = Console.ReadLine();
 
+        try
+        {
+            string caminho = $"/home/lukhas/repo/CSharp/Projeto/{nomeArquivo}.txt";
+            if (!File.Exists(caminho)) throw new IOException();
+
+            string[] funcionarios = File.ReadAllLines(caminho);
+
+            foreach(string f in funcionarios)
+            {
+                Funcionario funcionario = FuncionarioTexto.ConverterParaFuncionario(f);
+
+                Console.WriteLine($"NOME: {funcionario.Nome}");
+            }
+        }catch(IOException)
+        {
+            Console.WriteLine("O arquivo não existe!!!");
+        }
     }
 }
