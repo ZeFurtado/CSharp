@@ -60,7 +60,7 @@ public class ManterFuncionario
             {
                 Funcionario funcionario = FuncionarioTexto.ConverterParaFuncionario(f);
 
-                Console.WriteLine($"NOME: {funcionario.Nome}");
+                Console.WriteLine($"NOME: {funcionario.Nome} " + $"Cargo: {funcionario.Cargo}");
             }
         }catch(IOException)
         {
