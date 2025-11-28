@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstrutorRapido", "Constru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_AutoImplementPropertyAtribuir", "_AutoImplementPropertyAtribuir\_AutoImplementPropertyAtribuir.csproj", "{13ABC36A-A618-44E9-A805-9AC35A514527}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingStatic", "UsingStatic\UsingStatic.csproj", "{3E199474-24E5-4AD2-9AFA-DFEC8E1193E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatarString", "FormatarString\FormatarString.csproj", "{87689A4A-9123-4090-92D0-8804AEC4BB91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{13ABC36A-A618-44E9-A805-9AC35A514527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13ABC36A-A618-44E9-A805-9AC35A514527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13ABC36A-A618-44E9-A805-9AC35A514527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E199474-24E5-4AD2-9AFA-DFEC8E1193E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E199474-24E5-4AD2-9AFA-DFEC8E1193E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E199474-24E5-4AD2-9AFA-DFEC8E1193E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E199474-24E5-4AD2-9AFA-DFEC8E1193E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87689A4A-9123-4090-92D0-8804AEC4BB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87689A4A-9123-4090-92D0-8804AEC4BB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87689A4A-9123-4090-92D0-8804AEC4BB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87689A4A-9123-4090-92D0-8804AEC4BB91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
