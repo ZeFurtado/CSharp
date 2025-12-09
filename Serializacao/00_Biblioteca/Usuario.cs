@@ -7,4 +7,9 @@ public class Usuario
     public string Email{get;set;}
 
     public IMC Imc{get; set;}
+
+    public double getImc()
+    {
+        return Imc.getImc();
+    }
 }
