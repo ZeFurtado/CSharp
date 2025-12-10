@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_SerializarXML", "01_Seri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_DeserializarXML", "02_DeserializarXML\02_DeserializarXML.csproj", "{7DB07D8F-0029-446D-BFAB-7E7D1C468D0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_SerializarJSON", "03_SerializarJSON\03_SerializarJSON.csproj", "{DEF196E6-8AB0-415B-AEB8-FC6EA40E384E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{7DB07D8F-0029-446D-BFAB-7E7D1C468D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DB07D8F-0029-446D-BFAB-7E7D1C468D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DB07D8F-0029-446D-BFAB-7E7D1C468D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF196E6-8AB0-415B-AEB8-FC6EA40E384E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF196E6-8AB0-415B-AEB8-FC6EA40E384E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF196E6-8AB0-415B-AEB8-FC6EA40E384E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF196E6-8AB0-415B-AEB8-FC6EA40E384E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
