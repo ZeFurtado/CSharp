@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_VarDynamic", "02_VarDyna
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Extension_Methods", "03_Extension_Methods\03_Extension_Methods.csproj", "{845CD0F7-92EB-4009-8ECC-E0D7C205C5F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Nullable", "04_Nullable\04_Nullable.csproj", "{7B094285-27C6-46DE-BF27-2666E33D68BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{845CD0F7-92EB-4009-8ECC-E0D7C205C5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{845CD0F7-92EB-4009-8ECC-E0D7C205C5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{845CD0F7-92EB-4009-8ECC-E0D7C205C5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B094285-27C6-46DE-BF27-2666E33D68BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B094285-27C6-46DE-BF27-2666E33D68BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B094285-27C6-46DE-BF27-2666E33D68BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B094285-27C6-46DE-BF27-2666E33D68BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
