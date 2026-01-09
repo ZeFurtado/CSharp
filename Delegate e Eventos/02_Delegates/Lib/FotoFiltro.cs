@@ -6,21 +6,21 @@ public class FotoFiltro
 {
     public void Colorir(Foto foto)
     {
-        Console.Write("FotoFiltro > colorir");
+        Console.WriteLine("FotoFiltro > colorir: " + foto.Nome);
     }
 
-    public void GerarThumb(Foto fot)
+    public void GerarThumb(Foto foto)
     {
-        Console.Write("FotoFiltro > GerarThumb");
+        Console.WriteLine("FotoFiltro > GerarThumb: " + foto.Nome);
     }
 
     public void PretoBranco(Foto foto)
     {
-        Console.Write("FotoFiltro > PretoBranco");
+        Console.WriteLine("FotoFiltro > PretoBranco: " + foto.Nome);
     }
 
     public void RedimensionarMedio(Foto foto)
     {
-        Console.Write("FotoFiltro > RedimensionarMedio");
+        Console.WriteLine("FotoFiltro > RedimensionarMedio: " + foto.Nome);
     }
 }

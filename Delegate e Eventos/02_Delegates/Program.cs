@@ -13,8 +13,13 @@ public class Program
         FotoProcessador.Processar(fotoUsuario);
         
         //Tela - Cadastro de Produtos: Colorir + TamanhoMed
+        FotoProcessador.filtros = new FotoFiltro().Colorir;
+        FotoProcessador.filtros += new FotoFiltro().RedimensionarMedio;
+        FotoProcessador.Processar(new Foto{Nome="fotoProdutos.jpg", TamanhoX=1920, TamanhoY=1080});
 
         //Tela - Cadastro de Albuns do Usuário - Retro: Preto e Branco
+        FotoProcessador.filtros = new FotoFiltro().PretoBranco;
+        FotoProcessador.Processar(new Foto{Nome="Albuns.jpg", TamanhoX=1920, TamanhoY=1080});
         
     }
 }
