@@ -6,7 +6,7 @@ public class Program
 {
     static void Main(string[] args)
     {
-        int [] inteiros = new int[]{1,4,85,96,146,12,35,48,75,46,5, 50};
+        int [] inteiros = new int[]{1,4,85,96,146,12,35,48,75,46,5,50};
 
         Console.WriteLine("Maior que dez: ");
         foreach(int i in Inteiros.MaiorQueDez(inteiros))
@@ -23,6 +23,12 @@ public class Program
 
         Console.WriteLine("Números Pares: ");
         foreach(int i in Inteiros.NumerosPares(inteiros))
+        {
+            Console.WriteLine(i);
+        }
+
+        Console.WriteLine("Números Ímpares: ");
+        foreach(int i in Inteiros.NumerosImpares(inteiros))
         {
             Console.WriteLine(i);
         }
