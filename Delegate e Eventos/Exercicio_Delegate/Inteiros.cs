@@ -73,4 +73,28 @@ public class Inteiros
         return arrayRetorno;
     }
 
+    public static int[] NumerosImpares(int[] array)
+    {
+        int[] arrayTemp = new int[array.Count()];
+        int p = -1;
+
+        foreach (int i in array)
+        {
+            if(i % 2 != 0)
+            {
+                p++;
+                arrayTemp[p] = i;
+            }
+        }
+
+        int[] arrayRetorno = new int[p + 1];
+
+        for(int q = 0; q < p + 1; q++)
+        {
+           arrayRetorno[q] = arrayTemp[q];
+        }
+
+        return arrayRetorno;
+    }
+
 }
