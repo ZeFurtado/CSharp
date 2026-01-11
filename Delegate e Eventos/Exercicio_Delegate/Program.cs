@@ -20,6 +20,12 @@ public class Program
         {
             Console.WriteLine(i);
         }
+
+        Console.WriteLine("Números Pares: ");
+        foreach(int i in Inteiros.NumerosPares(inteiros))
+        {
+            Console.WriteLine(i);
+        }
     }
 
     
