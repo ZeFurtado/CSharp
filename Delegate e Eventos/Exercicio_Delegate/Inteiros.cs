@@ -97,4 +97,10 @@ public class Inteiros
         return arrayRetorno;
     }
 
+    /*public int[] NumerosPrimos(int[] array)
+    {
+        int[] arrayTemp = new int[array.Count()];
+        int p = -1;
+    }*/
+
 }
