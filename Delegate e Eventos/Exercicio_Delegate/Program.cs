@@ -1,38 +1,25 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace Exercicio_Delegate;
+﻿namespace Exercicio_Delegate;
 
 public class Program
 {
     static void Main(string[] args)
     {
-        int [] inteiros = new int[]{1,4,85,96,146,12,35,48,75,46,5,50};
+        Random random = new Random(); 
+        int[] inteiros = new int[random.Next(100, 1000)];
 
-        Console.WriteLine("Maior que dez: ");
-        foreach(int i in Inteiros.MaiorQueDez(inteiros))
-        {
-           Console.WriteLine(i);
-        }
+        Ordenar.inteirosHandler = Inteiros.MaiorQueDez;
+        Ordenar.inteirosHandler += Inteiros.NumerosImpares;
 
+        int[] arrayOrdenado = Ordenar.Ordena(inteiros);
 
-        Console.WriteLine("Menor que dez: ");
-        foreach (int i in Inteiros.MenorQueDez(inteiros))
+        foreach(int i in arrayOrdenado)
         {
             Console.WriteLine(i);
         }
-
-        Console.WriteLine("Números Pares: ");
-        foreach(int i in Inteiros.NumerosPares(inteiros))
-        {
-            Console.WriteLine(i);
-        }
-
-        Console.WriteLine("Números Ímpares: ");
-        foreach(int i in Inteiros.NumerosImpares(inteiros))
-        {
-            Console.WriteLine(i);
-        }
+        
     }
+
+    
 
     
 }
