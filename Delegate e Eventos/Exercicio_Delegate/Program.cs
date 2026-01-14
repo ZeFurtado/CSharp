@@ -6,6 +6,11 @@ public class Program
     {
         Random random = new Random(); 
         int[] inteiros = new int[random.Next(100, 1000)];
+        
+        for(int x = 0; x < inteiros.Count(); x++)
+        {
+            inteiros[x] = random.Next(0, 8000); 
+        }
 
         Ordenar.inteirosHandler = Inteiros.MaiorQueDez;
         Ordenar.inteirosHandler += Inteiros.NumerosImpares;
