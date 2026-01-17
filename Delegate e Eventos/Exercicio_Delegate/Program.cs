@@ -16,7 +16,7 @@ public class Program
         Ordenar.inteirosHandler = Inteiros.NumerosImpares;
         Ordenar.inteirosHandler = Inteiros.NumerosPrimos;
 
-        int[] arrayOrdenado = Ordenar.Ordena(inteiros);
+        int[] arrayOrdenado = Ordenar.Ordena(ref array1);
 
         foreach(int i in arrayOrdenado)
         {

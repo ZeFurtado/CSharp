@@ -3,7 +3,7 @@ namespace Exercicio_Delegate;
 
 public class Inteiros
 {
-    public static int[] MaiorQueDez(int[] array)
+    public static int[] MaiorQueDez(ref int[] array)
     {
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
@@ -26,7 +26,7 @@ public class Inteiros
         return arrayRetorno;
     }
 
-    public static int[] MenorQueDez(int[] array)
+    public static int[] MenorQueDez(ref int[] array)
     {
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
@@ -49,7 +49,30 @@ public class Inteiros
         return arrayRetorno;
     }
 
-    public static int[] NumerosPares(int[] array)
+    public static int[] MenorQueCem(ref int[] array)
+    {
+        int[] arrayTemp = new int[array.Count()];
+        int p = -1;
+        foreach (int i in array)
+        {
+            if(i < 100)
+            {
+                p++;
+                arrayTemp[p] = i;
+            }
+        }
+
+        int[] arrayRetorno = new int[p + 1];
+
+        for(int q = 0; q < p + 1; q++)
+        {
+           arrayRetorno[q] = arrayTemp[q];
+        }
+
+        return arrayRetorno;
+    }
+
+    public static int[] NumerosPares(ref int[] array)
     {
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
@@ -73,7 +96,7 @@ public class Inteiros
         return arrayRetorno;
     }
 
-    public static int[] NumerosImpares(int[] array)
+    public static int[] NumerosImpares(ref int[] array)
     {
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
@@ -97,7 +120,7 @@ public class Inteiros
         return arrayRetorno;
     }
 
-    public static int[] NumerosPrimos(int[] array)
+    public static int[] NumerosPrimos(ref int[] array)
     {
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
