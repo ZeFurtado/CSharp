@@ -14,6 +14,17 @@ public class Program
         {
             inteiros[x] = random.Next(0, 8000); 
         }
+        
+        Console.WriteLine("---Array orginal: ");
+        foreach(int i in array1)
+        {
+            Console.WriteLine(i);
+        }
+
+        Console.WriteLine("----------------");
+
+        
+        Console.WriteLine("---Array ordenado");
 
         Ordenar.inteirosHandler = Inteiros.MaiorQueDez;
         Ordenar.inteirosHandler += Inteiros.NumerosImpares;
