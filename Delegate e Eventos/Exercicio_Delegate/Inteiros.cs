@@ -5,6 +5,9 @@ public class Inteiros
 {
     public static int[] MaiorQueDez(ref int[] array)
     {
+        Console.WriteLine("Obtendo números maiores que dez...");
+        Thread.Sleep(3000);
+
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
         foreach (int i in array)
@@ -23,11 +26,16 @@ public class Inteiros
            arrayRetorno[q] = arrayTemp[q];
         }
 
-        return arrayRetorno;
+        array = arrayRetorno;
+        return array;
     }
 
     public static int[] MenorQueDez(ref int[] array)
     {
+
+        Console.WriteLine("Obtendo números menores que dez...");
+        Thread.Sleep(3000);
+
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
         foreach (int i in array)
@@ -46,11 +54,16 @@ public class Inteiros
            arrayRetorno[q] = arrayTemp[q];
         }
 
-        return arrayRetorno;
+        array = arrayRetorno;
+        return array;
     }
 
     public static int[] MenorQueCem(ref int[] array)
     {
+
+        Console.WriteLine("Obtendo números menores que cem...");
+        Thread.Sleep(3000);
+
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
         foreach (int i in array)
@@ -69,11 +82,16 @@ public class Inteiros
            arrayRetorno[q] = arrayTemp[q];
         }
 
-        return arrayRetorno;
+        array = arrayRetorno;
+        return array;
     }
 
     public static int[] NumerosPares(ref int[] array)
     {
+
+        Console.WriteLine("Obtendo números pares...");
+        Thread.Sleep(3000);
+
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
 
@@ -93,11 +111,16 @@ public class Inteiros
            arrayRetorno[q] = arrayTemp[q];
         }
 
-        return arrayRetorno;
+        array = arrayRetorno;
+        return array;
     }
 
-    public static int[] NumerosImpares(ref int[] array)
+    public static int[]NumerosImpares(ref int[] array)
     {
+        
+        Console.WriteLine("Obtendo números ímpares...");
+        Thread.Sleep(3000);
+
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
 
@@ -117,11 +140,16 @@ public class Inteiros
            arrayRetorno[q] = arrayTemp[q];
         }
 
-        return arrayRetorno;
+        array = arrayRetorno;
+        return array;
     }
 
     public static int[] NumerosPrimos(ref int[] array)
     {
+
+        Console.WriteLine("Obtendo números primos..."); 
+        Thread.Sleep(3000);
+        
         int[] arrayTemp = new int[array.Count()];
         int p = -1;
 
@@ -141,7 +169,8 @@ public class Inteiros
            arrayRetorno[q] = arrayTemp[q];
         }
 
-        return arrayRetorno;
+        array = arrayRetorno;
+        return array;
     }
 
     private static bool EhPrimo(int i)
