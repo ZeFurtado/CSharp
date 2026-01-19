@@ -30,6 +30,7 @@ public class Program
         Ordenar.inteirosHandler = Inteiros.MaiorQueDez;
         Ordenar.inteirosHandler += Inteiros.NumerosImpares;
         Ordenar.inteirosHandler += Inteiros.MenorQueCem;
+        Ordenar.inteirosHandler += Inteiros.NumerosPrimos;
 
         int[] arrayOrdenado = Ordenar.Ordena(ref inteiros);
         //Ordenar.inteirosHandler += Inteiros.MenorQueCem;
