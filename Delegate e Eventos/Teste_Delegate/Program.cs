@@ -31,7 +31,6 @@ class Program
         log($"Conexão falhou!Tentando novamente........{DateTime.Now}");
         Thread.Sleep(3000);
         //Segunda tentativa
-        log($"Conexão bem sucedida! {DateTime.Now}");
-
+        log($"Conexão bem sucedida! {DateTime.Now}"); 
     }
 }
