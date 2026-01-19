@@ -26,14 +26,15 @@ public class Program
         
         Console.WriteLine("---Array ordenado");
 
+       
+        
         Ordenar.inteirosHandler = Inteiros.MaiorQueDez;
         Ordenar.inteirosHandler += Inteiros.NumerosImpares;
         Ordenar.inteirosHandler += Inteiros.MenorQueCem;
-        Ordenar.inteirosHandler += Inteiros.NumerosPrimos;
-        
-        
 
         int[] arrayOrdenado = Ordenar.Ordena(ref array1);
+        //Ordenar.inteirosHandler += Inteiros.MenorQueCem;
+        //Ordenar.inteirosHandler += Inteiros.NumerosPrimos;
 
         foreach(int i in arrayOrdenado)
         {
