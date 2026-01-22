@@ -2,48 +2,88 @@
 
 namespace Longest_Common_Prefix;
 
+
+/*
+Longest Common Prefix
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+ 
+
+Example 1:
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+Example 2:
+
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+ 
+
+Constraints:
+
+    1 <= strs.length <= 200
+    0 <= strs[i].length <= 200
+    strs[i] consists of only lowercase English letters if it is non-empty.
+
+
+*/
+
 class Program
 {
     static void Main(string[] args)
     {
 
-        string[] palavrasPrefix = new string[]{"beijo", "beiçola", "beira"};
-        string[] palavrasPrefix2 = new string[]{"flor", "floração", "fidalgo"};
+        string[] palavrasPrefix = {"beijo", "beiçola", "beira"};
+        string[] palavrasPrefix2 = {"flor", "floração", "fidalgo"};
+        string[] palavrasPrefix3 = {"maresia", "maré", "marisol"};
+        string[] palavrasPrefix4 = {"flower","flow","flight"};
 
         Console.WriteLine(LongestCommonPrefix(palavrasPrefix));
         Console.WriteLine(LongestCommonPrefix(palavrasPrefix2));
+        Console.WriteLine(LongestCommonPrefix(palavrasPrefix3));
+        Console.WriteLine(LongestCommonPrefix(palavrasPrefix4));
     }
 
     public static string LongestCommonPrefix(string[] strs)
     {
         if(strs.Length < 1 || strs.Length > 200) return "";
-        if(strs.Count() < 3) throw new PalavraInvalidaException("O array precisa ser de no mínimo 3 palavras");
-        if(strs[0].First() != strs[1].First() || strs[1].First() != strs[2].First()) return "";
+        if(strs.Length == 1) return strs[0];
+        
+        char[] prefix = strs[0].ToCharArray();
+        StringBuilder stringBuilder = new StringBuilder();
 
-        char[] palavra1 = strs[0].ToCharArray();
-        char[] palavra2 = strs[1].ToCharArray();
-        char[] palavra3 = strs[2].ToCharArray();
-
-        StringBuilder sb = new StringBuilder();
-
-        bool equal = true;
-
-        int p = 0;
-        while(equal)
+        foreach (string str in strs)
         {
-            if(p >= palavra1.Count()|| p >= palavra2.Count() || p >= palavra3.Count()) break;
-
-            if(palavra1[p] == palavra2[p] && palavra1[p] == palavra3[p])
+            char[] palavra = str.ToCharArray();
+            int p = 0;
+            foreach(char c in prefix)
             {
-                sb.Append(palavra1[p]);
-                p++;
-            }else
-            {
-                equal = false;
+                if(p >= palavra.Count())
+                {
+                    break;
+                }else if(c == palavra[p]) 
+                {
+                   stringBuilder.Append(c);
+                   p++; 
+                }else if (c != palavra[p])
+                {
+                    break;   
+                }
             }
-
+            prefix = stringBuilder.ToString().ToCharArray();
+            stringBuilder.Clear();
         }
 
-        return sb.ToString();
+        foreach(char c in prefix)
+        {
+            stringBuilder.Append(c);
+        }
+
+        return stringBuilder.ToString();
     }
 }
