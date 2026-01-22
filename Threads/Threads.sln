@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_MultiThread", "03_MultiT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_ThreadBackground", "04_ThreadBackground\04_ThreadBackground.csproj", "{798159B4-D366-4354-94F7-911D2985EB5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_ThreadSafe", "05_ThreadSafe\05_ThreadSafe.csproj", "{AA3DBEDF-B100-47F5-A1DF-8F868CE6C027}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{798159B4-D366-4354-94F7-911D2985EB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{798159B4-D366-4354-94F7-911D2985EB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{798159B4-D366-4354-94F7-911D2985EB5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3DBEDF-B100-47F5-A1DF-8F868CE6C027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3DBEDF-B100-47F5-A1DF-8F868CE6C027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3DBEDF-B100-47F5-A1DF-8F868CE6C027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3DBEDF-B100-47F5-A1DF-8F868CE6C027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
