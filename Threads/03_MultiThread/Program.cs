@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 6; i++)
         {
             Thread t1 = new Thread(ThreadRepeticao);
             t1.Start();
