@@ -7,7 +7,7 @@ public class Program
 
         Console.WriteLine("Início: ", DateTime.Now);
 
-        for(int i = 0; i < 6; i++)
+        for(int i = 0; i < 5; i++)
         {
             Thread t1 = new Thread(ThreadRepeticao);
             t1.IsBackground = true;
