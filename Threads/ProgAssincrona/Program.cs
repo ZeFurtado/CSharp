@@ -54,17 +54,17 @@ class Program
     {
         var t1 = new Thread(() =>
         {
-            RealizarOperacao(1, "Eduardo", "Moreira");
+            RealizarOperacao(4, "Eduardo", "Moreira");
         });
 
         var t2 = new Thread(() =>
         {
-            RealizarOperacao(2, "Getúlio", "Nargas");
+            RealizarOperacao(5, "Getúlio", "Nargas");
         });
 
         var t3 = new Thread(() =>
         {
-            RealizarOperacao(3, "Fidalgo", "Castro");
+            RealizarOperacao(6, "Fidalgo", "Castro");
         });
     }
 }
