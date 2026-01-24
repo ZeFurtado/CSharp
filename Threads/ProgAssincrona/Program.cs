@@ -8,12 +8,25 @@ class Program
     {
         Stopwatch stopwatch = new Stopwatch();
 
+        Console.WriteLine("-----Operação Sequencial-----");
+        Console.WriteLine("Hora início: {0}", DateTime.Now);
+        
         stopwatch.Start();
-
-        RealizarOperacao(1, "Joseph", "Griffin");
-        RealizarOperacao(2, "Jack", "Morgan");
-        RealizarOperacao(3, "Johnson", "Junior");
+        ExecutarSequencial();
         stopwatch.Stop();
+        
+        Console.WriteLine("Hora fim: {0}", DateTime.Now);
+        Console.WriteLine("Operação gastou: {0} milisegundos", stopwatch.ElapsedMilliseconds);
+
+
+        Console.WriteLine("------Operação em Threads-----");
+        Console.WriteLine("Hora início: {0}", DateTime.Now);
+        
+        stopwatch.Start();
+        ExecutarComThreads();
+        stopwatch.Stop();
+        
+        Console.WriteLine("Hora fim: {0}", DateTime.Now);
 
         Console.WriteLine($"Operação gastou: {stopwatch.ElapsedMilliseconds} milisegundos");
         Console.ReadKey();
