@@ -66,5 +66,9 @@ class Program
         {
             RealizarOperacao(6, "Fidalgo", "Castro");
         });
+
+        t1.Start();
+        t2.Start();
+        t3.Start();
     }
 }
