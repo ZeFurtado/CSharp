@@ -17,12 +17,12 @@ class Program
         
         Console.WriteLine("Hora fim: {0}", DateTime.Now);
         Console.WriteLine("Operação gastou: {0} milisegundos", stopwatch.ElapsedMilliseconds);
-
+        
 
         Console.WriteLine("------Operação em Threads-----");
         Console.WriteLine("Hora início: {0}", DateTime.Now);
         
-        stopwatch.Start();
+        stopwatch.Restart();
         ExecutarComThreads();
         stopwatch.Stop();
         
@@ -70,5 +70,9 @@ class Program
         t1.Start();
         t2.Start();
         t3.Start();
+
+        t1.Join();
+        t2.Join();
+        t3.Join();
     }
 }
