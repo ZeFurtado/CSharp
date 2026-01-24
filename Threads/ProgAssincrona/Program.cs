@@ -11,8 +11,8 @@ class Program
         stopwatch.Start();
 
         RealizarOperacao(1, "Joseph", "Griffin");
-        RealizarOperacao(2, "Joseph", "Griffin");
-        RealizarOperacao(3, "Joseph", "Griffin");
+        RealizarOperacao(2, "Jack", "Morgan");
+        RealizarOperacao(3, "Johnson", "Junior");
         stopwatch.Stop();
 
         Console.WriteLine($"Operação gastou: {stopwatch.ElapsedMilliseconds} milisegundos");
