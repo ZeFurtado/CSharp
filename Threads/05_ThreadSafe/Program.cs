@@ -19,15 +19,18 @@ class Program
 
     static void ThreadRepeticao()
     {
-
-        lock(variavelDeControle)
+        for(int x =0; x < 1000; x++)
         {
+            lock(variavelDeControle)
+            {
             for(int i = 0; i < 1000; i++)
             {
                 Console.WriteLine("Num:  " + i);
                 Rede++;
             }
         }
-        Console.WriteLine("Fim: " + DateTime.Now);
+            Console.WriteLine("Fim: " + DateTime.Now);
+        }
+        
     }
 }
