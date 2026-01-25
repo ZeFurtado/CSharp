@@ -27,7 +27,17 @@ class Program
         stopwatch.Stop();
         
         Console.WriteLine("Hora fim: {0}", DateTime.Now);
+        Console.WriteLine($"Operação gastou: {stopwatch.ElapsedMilliseconds} milisegundos");
 
+        
+        Console.WriteLine("-----Operação com Tasks-----");
+        Console.WriteLine("Hora início: {0}", DateTime.Now);
+
+        stopwatch.Restart();
+        ExecutarComTasks();
+        stopwatch.Stop();
+
+        Console.WriteLine("Hora fim: {0}", DateTime.Now);
         Console.WriteLine($"Operação gastou: {stopwatch.ElapsedMilliseconds} milisegundos");
         Console.ReadKey();
     }
