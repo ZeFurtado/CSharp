@@ -75,4 +75,27 @@ class Program
         t2.Join();
         t3.Join();
     }
+
+    static void ExecutarComTasks()
+    {
+        var t1 = Task.Run<int>(() =>
+        {
+            RealizarOperacao(7, "Nancy", "Spugen");
+            return 7;
+        });
+
+        var t2 = Task.Run<int>(() =>
+        {
+            RealizarOperacao(8, "Ozzy", "Osbourne");
+            return 8;
+        });
+
+        var t3 = Task.Run<int>(() =>
+        {
+            RealizarOperacao(9, "Millie", "Brown");
+            return 9;  
+        });
+
+
+    }
 }
