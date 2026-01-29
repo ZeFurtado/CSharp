@@ -1,9 +1,9 @@
 namespace ConsoleSQL;
 
-public class SQLOperacoes
+public interface ISQLOperacoes
 {
-    public void Insert(){}
-    public void Update(){}
-    public void Read(){}
-    public void Delete(){}
+    string Insert(string nomeDaTabela, int Id);
+    string Update(string nomeDaTabela, int Id);
+    string Read(string nomeDaTabela, int Id);
+    public string Delete(string nomeDaTabela, int Id);
 }
