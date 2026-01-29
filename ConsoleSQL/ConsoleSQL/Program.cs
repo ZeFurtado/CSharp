@@ -1,4 +1,4 @@
-﻿using ;
+﻿using Microsoft.Data.SqlClient;
 
 namespace ConsoleSQL;
 
@@ -15,8 +15,16 @@ public class Program
 
     static void Conectar(string senha)
     {
-        string dadosLogin;
-
-        
+        SqlConnection sqlConnection = new SqlConnection($"SERVER=localhost; DATABASE=Diamba;User Id=sa; Password={senha}; TrustServerCertificate=True;Encrypt=True;");
+        try
+        {
+            sqlConnection.Open();
+            Console.WriteLine("A conexão foi bem sucedida");
+            
+        }catch(Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            sqlConnection.Close();
+        }
     }
 }
