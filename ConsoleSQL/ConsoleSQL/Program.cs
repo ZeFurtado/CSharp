@@ -15,7 +15,8 @@ public class Program
 
     static void BancoDeDados(string senha)
     {
-        SqlConnection sqlConnection = new SqlConnection($"SERVER=localhost; DATABASE=Diamba;User Id=sa; Password={senha}; TrustServerCertificate=True;Encrypt=True;");
+        string connectionString = $"SERVER=localhost; DATABASE=testDb;User Id=sa; Password={senha}; TrustServerCertificate=True;Encrypt=True;";
+        SqlConnection sqlConnection = new SqlConnection(connectionString);
         try
         {
             sqlConnection.Open();
