@@ -9,11 +9,11 @@ public class Program
         Console.WriteLine("CONSOLE SQL SERVER DO LIL FURTS");
         Console.WriteLine("Digite a senha do banco de dados: ");
         string senha = Console.ReadLine();
-        Conectar(senha);
+        BancoDeDados(senha);
         
     }
 
-    static void Conectar(string senha)
+    static void BancoDeDados(string senha)
     {
         SqlConnection sqlConnection = new SqlConnection($"SERVER=localhost; DATABASE=Diamba;User Id=sa; Password={senha}; TrustServerCertificate=True;Encrypt=True;");
         try
