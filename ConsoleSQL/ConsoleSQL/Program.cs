@@ -4,9 +4,21 @@ namespace ConsoleSQL;
 
 public class Program
 {
+    private static string titulo = @"
+██████╗ ██████╗     ███╗   ███╗ █████╗ ███╗   ██╗ █████╗  ██████╗ ███████╗██████╗
+██╔══██╗██╔══██╗    ████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝ ██╔════╝██╔══██╗
+██║  ██║██████╔╝    ██╔████╔██║███████║██╔██╗ ██║███████║██║  ███╗█████╗  ██████╔╝
+██║  ██║██╔══██╗    ██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══██║██║   ██║██╔══╝  ██╔══██╗
+██████╔╝██████╔╝    ██║ ╚═╝ ██║██║  ██║██║ ╚████║██║  ██║╚██████╔╝███████╗██║  ██║
+╚═════╝ ╚═════╝     ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+----------------------------------------------------------------------------------
+            APLICATIVO DE CONSOLE PARA MANIPULAÇÃO DE BANCO DE DADOS
+----------------------------------------------------------------------------------
+";
+
     static void Main()
     {
-        Console.WriteLine("CONSOLE SQL SERVER DO LIL FURTS");
+        Console.WriteLine(titulo);
         Console.WriteLine("Digite a senha do banco de dados: ");
         string senha = Console.ReadLine();
         BancoDeDados(senha);
@@ -26,7 +38,8 @@ public class Program
             Console.WriteLine(ex.Message);
         }
         sqlConnection.Close();
-         Console.WriteLine("CONSOLE SQL SERVER DO LIL FURTS");
+        Console.Clear();
+        Console.WriteLine(titulo);
         Console.WriteLine("Você está utilizando a base de dados: {0}", sqlConnection.Database);
         Console.WriteLine("O que você deseja fazer com a tabela?");
         Console.WriteLine("1 - Inserir");
@@ -41,18 +54,23 @@ public class Program
             switch (opcao)
             {
                 case 1:
+                //Mudar criação do SubTítulo
+                string subTitulo = @"
+                ________________
+
+                    INSERIR
+                ________________
+                ";
                     try
                     {
-                        using(SqlConnection connection = new SqlConnection(connectionString))
-                        {
-                            SqlCommand sqlCommand = new SqlCommand("INSERT INTO Usuarios VALUES (3, 'Steven Tyler');", connection);
-                            connection.Open();
-                            Console.WriteLine("{0} Linha(s) afetada(s)", sqlCommand.ExecuteNonQuery());
-                            connection.Close();
-                        }
+                        Console.Clear();
+                        Console.WriteLine(titulo);
+                        Console.WriteLine(subTitulo);
+                        Console.WriteLine("Digite o nome do usuário: ");
+                        
                     }catch(Exception ex)
                     {
-                        Console.WriteLine("Exceção: {0}", ex.Message);
+                        Console.WriteLine("Exceção: {0}", ex.Message);  
                     }
                     opcao = 5;
                 break;
