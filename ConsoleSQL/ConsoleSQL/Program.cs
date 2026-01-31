@@ -20,9 +20,8 @@ public class Program
     {
         Console.WriteLine(titulo);
         Console.WriteLine("Digite a senha do banco de dados: ");
-        string senha = Console.ReadLine();
-        BancoDeDados(senha);
-        
+        string senha = Console.ReadLine(); //Implementar validação da senha
+        BancoDeDados(senha);        
     }
 
     static void BancoDeDados(string senha)
