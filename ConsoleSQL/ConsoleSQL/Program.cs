@@ -4,7 +4,8 @@ namespace ConsoleSQL;
 
 public class Program
 {
-    private static string titulo = @"
+    private static string subTitulo = "Tela Inicial";
+    private static string titulo = $@"
 ██████╗ ██████╗     ███╗   ███╗ █████╗ ███╗   ██╗ █████╗  ██████╗ ███████╗██████╗
 ██╔══██╗██╔══██╗    ████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝ ██╔════╝██╔══██╗
 ██║  ██║██████╔╝    ██╔████╔██║███████║██╔██╗ ██║███████║██║  ███╗█████╗  ██████╔╝
@@ -14,10 +15,16 @@ public class Program
 ----------------------------------------------------------------------------------
             APLICATIVO DE CONSOLE PARA MANIPULAÇÃO DE BANCO DE DADOS
 ----------------------------------------------------------------------------------
+________________
+
+  {subTitulo}
+________________
+
 ";
 
     static void Main()
     {
+        Console.Clear();
         Console.WriteLine(titulo);
         Console.WriteLine("Digite a senha do banco de dados: ");
         string senha = Console.ReadLine(); //Implementar validação da senha
