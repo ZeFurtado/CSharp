@@ -4,28 +4,10 @@ namespace ConsoleSQL;
 
 public class Program
 {
-    private static string subTitulo = "Tela Inicial";
-    private static string titulo = $@"
-██████╗ ██████╗     ███╗   ███╗ █████╗ ███╗   ██╗ █████╗  ██████╗ ███████╗██████╗
-██╔══██╗██╔══██╗    ████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝ ██╔════╝██╔══██╗
-██║  ██║██████╔╝    ██╔████╔██║███████║██╔██╗ ██║███████║██║  ███╗█████╗  ██████╔╝
-██║  ██║██╔══██╗    ██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══██║██║   ██║██╔══╝  ██╔══██╗
-██████╔╝██████╔╝    ██║ ╚═╝ ██║██║  ██║██║ ╚████║██║  ██║╚██████╔╝███████╗██║  ██║
-╚═════╝ ╚═════╝     ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
-----------------------------------------------------------------------------------
-            APLICATIVO DE CONSOLE PARA MANIPULAÇÃO DE BANCO DE DADOS
-----------------------------------------------------------------------------------
-________________
-
-  {subTitulo}
-________________
-
-";
-
     static void Main()
     {
         Console.Clear();
-        Console.WriteLine(titulo);
+        Console.WriteLine(Menu.MenuInicial("Login"));
         Console.WriteLine("Digite a senha do banco de dados: ");
         string senha = Console.ReadLine(); //Implementar validação da senha
         BancoDeDados(senha);        
@@ -46,7 +28,8 @@ ________________
         Thread.Sleep(1500);
         sqlConnection.Close();
         Console.Clear();
-        Console.WriteLine(titulo);
+
+        Console.WriteLine(Menu.MenuInicial("Tela Inicial"));
         Console.WriteLine("Você está utilizando a base de dados: {0}", sqlConnection.Database);
         Console.WriteLine("O que você deseja fazer com a tabela?");
         Console.WriteLine("1 - Inserir");
@@ -61,10 +44,8 @@ ________________
             switch (opcao)
             {
                 case 1:
-                subTitulo = "Inserir";
                 Console.Clear();
-                Console.WriteLine(titulo);
-                Console.WriteLine(subTitulo);
+                Console.WriteLine(Menu.MenuInicial("Inserir"));
                 
                 Console.WriteLine("Digite o nome do usuário: ");
                 string nome = Console.ReadLine();
@@ -77,7 +58,7 @@ ________________
                 
                 int linhasAfetadas = SQLOperacoes.Insert(sqlConnection, nome, cargo, email);
                 Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
-
+                
                 break;
 
                 case 2:
