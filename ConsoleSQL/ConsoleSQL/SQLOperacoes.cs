@@ -13,7 +13,7 @@ public class SQLOperacoes
         {
             //Adiciona aspas simples na variável para o comando SQL rodar
             valores[i] = $"'{valores[i]}'";
-            
+
             //  Constroí a string do comando de acordo com a qntd de valores passados no método e adiciona uma vírgula
             //  no final para o próximo valor.
             comando.Append(" " + valores[i] + ", " );
@@ -25,7 +25,6 @@ public class SQLOperacoes
         }
         
         comando.Append(" );");
-        Console.WriteLine(comando.ToString());
         
         int linhasAfetadas = 0;
         using(connection)
