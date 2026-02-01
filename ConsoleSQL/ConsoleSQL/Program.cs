@@ -43,6 +43,7 @@ ________________
         {
             Console.WriteLine(ex.Message);
         }
+        Thread.Sleep(1500);
         sqlConnection.Close();
         Console.Clear();
         Console.WriteLine(titulo);
@@ -76,7 +77,7 @@ ________________
                 
                 int linhasAfetadas = SQLOperacoes.Insert(sqlConnection, nome, cargo, email);
                 Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
-                    opcao = 5;
+
                 break;
 
                 case 2:
