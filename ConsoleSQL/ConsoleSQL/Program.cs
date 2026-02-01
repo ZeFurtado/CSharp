@@ -60,24 +60,22 @@ ________________
             switch (opcao)
             {
                 case 1:
-                //Mudar criação do SubTítulo
-                string subTitulo = @"
-                ________________
+                subTitulo = "Inserir";
+                Console.Clear();
+                Console.WriteLine(titulo);
+                Console.WriteLine(subTitulo);
+                
+                Console.WriteLine("Digite o nome do usuário: ");
+                string nome = Console.ReadLine();
+                
+                Console.WriteLine("Digite o nome do cargo do usuário: ");
+                string cargo = Console.ReadLine();
 
-                    INSERIR
-                ________________
-                ";
-                    try
-                    {
-                        Console.Clear();
-                        Console.WriteLine(titulo);
-                        Console.WriteLine(subTitulo);
-                        Console.WriteLine("Digite o nome do usuário: ");
-                        
-                    }catch(Exception ex)
-                    {
-                        Console.WriteLine("Exceção: {0}", ex.Message);  
-                    }
+                Console.WriteLine("Digite seu melhor e-mail: ");
+                string email = Console.ReadLine();
+                
+                int linhasAfetadas = SQLOperacoes.Insert(sqlConnection, nome, cargo, email);
+                Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
                     opcao = 5;
                 break;
 
