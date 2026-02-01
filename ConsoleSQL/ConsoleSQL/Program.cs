@@ -57,8 +57,16 @@ public class Program
                 string email = Console.ReadLine();
                 
                 int linhasAfetadas = SQLOperacoes.Insert(sqlConnection, nome, cargo, email);
+
+                Console.Write("\aInserindo dados no banco.");
+                Thread.Sleep(950);
+                Console.Write(".");
+                Thread.Sleep(950);
+                Console.WriteLine(".");
+                Thread.Sleep(850);
                 Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
-                
+                Thread.Sleep(1500);
+
                 break;
 
                 case 2:
