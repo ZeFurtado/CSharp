@@ -7,7 +7,7 @@ namespace ConsoleSQL;
 public static class Menu
 {
     
-    public static string MenuInicial(string subTitulo)
+    public static string Titulo(string subTitulo)
     {
         string titulo = $@"
 ██████╗ ██████╗     ███╗   ███╗ █████╗ ███╗   ██╗ █████╗  ██████╗ ███████╗██████╗

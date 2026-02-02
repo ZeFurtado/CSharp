@@ -7,7 +7,7 @@ public class Program
     static void Main()
     {
         Console.Clear();
-        Console.WriteLine(Menu.MenuInicial("Login"));
+        Console.WriteLine(Menu.Titulo("Login"));
         Console.WriteLine("Digite a senha do banco de dados: ");
         string senha = Console.ReadLine(); //Implementar validação da senha
         BancoDeDados(senha);        
@@ -29,7 +29,7 @@ public class Program
         sqlConnection.Close();
         Console.Clear();
 
-        Console.WriteLine(Menu.MenuInicial("Tela Inicial"));
+        Console.WriteLine(Menu.Titulo("Tela Inicial"));
         Console.WriteLine("Você está utilizando a base de dados: {0}", sqlConnection.Database);
         Console.WriteLine("O que você deseja fazer com a tabela?");
         Console.WriteLine("1 - Inserir");
@@ -45,7 +45,7 @@ public class Program
             {
                 case 1:
                 Console.Clear();
-                Console.WriteLine(Menu.MenuInicial("Inserir"));
+                Console.WriteLine(Menu.Titulo("Inserir"));
                 
                 Console.WriteLine("Digite o nome do usuário: ");
                 string nome = Console.ReadLine();
