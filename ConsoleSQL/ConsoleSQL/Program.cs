@@ -6,90 +6,34 @@ public class Program
 {
     static void Main()
     {
-        Console.Clear();
-        Console.WriteLine(Menu.Titulo("Login"));
-        Console.WriteLine("Digite a senha do banco de dados: ");
-        string senha = Console.ReadLine(); //Implementar validação da senha
-        BancoDeDados(senha);        
-    }
-
-    static void BancoDeDados(string senha)
-    {
-        string connectionString = $"SERVER=localhost; DATABASE=testDb;User Id=sa; Password={senha}; TrustServerCertificate=True;Encrypt=True;";
-        SqlConnection sqlConnection = new SqlConnection(connectionString);
-        try
+        int opcao = 0;
+        while(opcao != 5)
         {
-            sqlConnection.Open();
-            Console.WriteLine("A conexão foi bem sucedida");
-        }catch(Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
-        Thread.Sleep(1500);
-        sqlConnection.Close();
-        Console.Clear();
-
-        Console.WriteLine(Menu.Titulo("Tela Inicial"));
-        Console.WriteLine("Você está utilizando a base de dados: {0}", sqlConnection.Database);
-        Console.WriteLine("O que você deseja fazer com a tabela?");
-        Console.WriteLine("1 - Inserir");
-        Console.WriteLine("2 - Editar");
-        Console.WriteLine("3 - Consultar");
-        Console.WriteLine("4 - Deletar");
-        Console.WriteLine("5 - Sair");
-        int opcao = int.Parse(Console.ReadLine());
-
-        while (opcao != 5)
-        {
-            switch (opcao)
+            Console.Clear();
+            switch(opcao)
             {
-                case 1:
-                Console.Clear();
-                Console.WriteLine(Menu.Titulo("Inserir"));
-                
-                Console.WriteLine("Digite o nome do usuário: ");
-                string nome = Console.ReadLine();
-                
-                Console.WriteLine("Digite o nome do cargo do usuário: ");
-                string cargo = Console.ReadLine();
-
-                Console.WriteLine("Digite seu melhor e-mail: ");
-                string email = Console.ReadLine();
-                
-                int linhasAfetadas = SQLOperacoes.Insert(sqlConnection, nome, cargo, email);
-
-                Console.Write("\aInserindo dados no banco.");
-                Thread.Sleep(950);
-                Console.Write(".");
-                Thread.Sleep(950);
-                Console.WriteLine(".");
-                Thread.Sleep(850);
-                Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
-                Thread.Sleep(1500);
-
-                break;
-
-                case 2:
-                break;
-
-                case 3:
-                break;
-
-                case 4:
-                break;
-
-                case 5:
-
+                case 0:
+                    Menu.Login();
+                    string senhaDB = Console.ReadLine();
+                    if(!SQLOperacoes.CriarConexao(senhaDB))
+                    {
+                        Console.WriteLine("A conexão com o banco de dados falhou");
+                        Thread.Sleep(1500);
+                        Console.WriteLine("Pressione qualquer tecla para tentar novamente.");
+                        Console.ReadLine();
+                        opcao = 0;
+                    }else
+                    {
+                        Menu.TelaInicial();
+                        opcao = int.Parse(Console.ReadLine());
+                    }      
                 break;
 
                 default:
-                    Console.WriteLine("Digite um dos números acima!");
+                    Console.WriteLine("Digite uma das opções acima");
                 break;
-
             }
         }
-
-
-        sqlConnection.Close();
+        
     }
 }
