@@ -7,26 +7,28 @@ public class SQLOperacoes
 {
     public string SenhaDB {get;set;}
     private static SqlConnection SqlConnectionProp;
-    public static bool CriarConexao(string senhaDB, out SqlConnection sqlConnection1)
+    public static bool CriarConexao(string senhaDB, out SqlConnection sqlConnection1) 
     {
         string stringDeConexao = $"SERVER=localhost; DATABASE=testDb;User Id=sa; Password={senhaDB}; TrustServerCertificate=True;Encrypt=True;";
         
         sqlConnection1 = new SqlConnection(stringDeConexao);
 
-        using(SqlConnection sqlConnection = new SqlConnection(stringDeConexao))
-        {
-            try
+        try
+        { 
+            using(sqlConnection1)
             {
-                sqlConnection.Open();
-                return true;
-
-            }catch(Exception ex)
-            {
-                return false;
+                sqlConnection1.Open(); 
             }
+            return true;
+        }catch(SqlException ex)
+        {
+            Console.WriteLine("SQlException - Mensagem: {0}",ex.Message);
+            return false;
+        }catch(Exception ex)
+        {
+            Console.WriteLine("Outra exceção - Mensagem: {0} ", ex.Message);
+            return false;
         }
-
-        
     }
 
     public static int Insert(SqlConnection connection, params string[] valores) //Método retorna a quantidade de linhas alteradas pelo comando SQL
@@ -62,10 +64,5 @@ public class SQLOperacoes
         }
         ;
         return linhasAfetadas;
-    }
-
-    public void SetSqlConnetion()
-    {
-        
     }
 }
