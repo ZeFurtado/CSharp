@@ -10,12 +10,13 @@ public class Program
         while(opcao != 5)
         {
             Console.Clear();
+            SqlConnection sqlConnection;
             switch(opcao)
             {
                 case 0:
                     Menu.Login();
                     string senhaDB = Console.ReadLine();
-                    if(!SQLOperacoes.CriarConexao(senhaDB))
+                    if(!SQLOperacoes.CriarConexao(senhaDB, out sqlConnection))
                     {
                         Console.WriteLine("A conexão com o banco de dados falhou");
                         Thread.Sleep(1500);
@@ -29,8 +30,12 @@ public class Program
                     }      
                 break;
 
+                case 1:
+                    Menu.Insert(sqlConnection);
+                break;
+
                 default:
-                    Console.WriteLine("Digite uma das opções acima");
+                    Console.WriteLine("Digite uma das opções acima.");
                 break;
             }
         }
