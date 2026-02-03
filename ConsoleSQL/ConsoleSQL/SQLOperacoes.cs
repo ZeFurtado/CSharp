@@ -1,9 +1,34 @@
+using System.Reflection.Metadata;
 using System.Text;
 using Microsoft.Data.SqlClient;
 namespace ConsoleSQL;
 
 public class SQLOperacoes
 {
+    public string SenhaDB {get;set;}
+    private static SqlConnection SqlConnectionProp;
+    public static bool CriarConexao(string senhaDB, out SqlConnection sqlConnection1)
+    {
+        string stringDeConexao = $"SERVER=localhost; DATABASE=testDb;User Id=sa; Password={senhaDB}; TrustServerCertificate=True;Encrypt=True;";
+        
+        sqlConnection1 = new SqlConnection(stringDeConexao);
+
+        using(SqlConnection sqlConnection = new SqlConnection(stringDeConexao))
+        {
+            try
+            {
+                sqlConnection.Open();
+                return true;
+
+            }catch(Exception ex)
+            {
+                return false;
+            }
+        }
+
+        
+    }
+
     public static int Insert(SqlConnection connection, params string[] valores) //Método retorna a quantidade de linhas alteradas pelo comando SQL
     {
         StringBuilder comando = new StringBuilder();
@@ -27,9 +52,9 @@ public class SQLOperacoes
         comando.Append(" );");
         
         int linhasAfetadas = 0;
-        using(connection)
+        using(SqlConnectionProp)
         {
-            using(SqlCommand sqlCommand = new SqlCommand(comando.ToString(), connection))
+            using(SqlCommand sqlCommand = new SqlCommand(comando.ToString(), SqlConnectionProp))
             {
                 connection.Open();
                 linhasAfetadas = sqlCommand.ExecuteNonQuery();
@@ -37,5 +62,10 @@ public class SQLOperacoes
         }
         ;
         return linhasAfetadas;
+    }
+
+    public void SetSqlConnetion()
+    {
+        
     }
 }
