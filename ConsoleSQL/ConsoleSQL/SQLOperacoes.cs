@@ -5,13 +5,11 @@ namespace ConsoleSQL;
 
 public class SQLOperacoes
 {
-    public string SenhaDB {get;set;}
-    private static SqlConnection SqlConnectionProp;
-    public static bool CriarConexao(string senhaDB, out SqlConnection sqlConnection1) 
+    public static bool CriarConexao(string senhaDB, out string stringDeConexao) 
     {
-        string stringDeConexao = $"SERVER=localhost; DATABASE=testDb;User Id=sa; Password={senhaDB}; TrustServerCertificate=True;Encrypt=True;";
+        stringDeConexao = $"SERVER=localhost; DATABASE=testDb;User Id=sa; Password={senhaDB}; TrustServerCertificate=True;Encrypt=True;";
         
-        sqlConnection1 = new SqlConnection(stringDeConexao);
+        SqlConnection sqlConnection1 = new SqlConnection(stringDeConexao);
 
         try
         { 
@@ -31,7 +29,7 @@ public class SQLOperacoes
         }
     }
 
-    public static int Insert(SqlConnection connection, params string[] valores) //Método retorna a quantidade de linhas alteradas pelo comando SQL
+    public static int Insert(string connectionString, params string[] valores) //Método retorna a quantidade de linhas alteradas pelo comando SQL
     {
         StringBuilder comando = new StringBuilder();
         comando.Append("INSERT INTO Usuarios VALUES (");
@@ -54,15 +52,14 @@ public class SQLOperacoes
         comando.Append(" );");
         
         int linhasAfetadas = 0;
-        using(SqlConnectionProp)
+        using(SqlConnection connection = new SqlConnection(connectionString))
         {
-            using(SqlCommand sqlCommand = new SqlCommand(comando.ToString(), SqlConnectionProp))
+            using(SqlCommand sqlCommand = new SqlCommand(comando.ToString(), connection))
             {
                 connection.Open();
                 linhasAfetadas = sqlCommand.ExecuteNonQuery();
             }
         }
-        ;
         return linhasAfetadas;
     }
 }
