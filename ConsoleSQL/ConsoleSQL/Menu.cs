@@ -52,6 +52,7 @@ ________________
 
     public static void Insert(string sqlConnectionString)
     {
+        Console.Clear();
         Console.WriteLine(Titulo("Insert"));
         
         Console.WriteLine("Digite o nome do usuário: ");
@@ -69,9 +70,19 @@ ________________
         Thread.Sleep(950);
         Console.WriteLine(".");
         Thread.Sleep(850);
-        int linhasAfetadas = SQLOperacoes.Insert(sqlConnectionString, nome, cargo, email);
-        Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
-        Thread.Sleep(1500);   
+        try
+        {
+            int linhasAfetadas = SQLOperacoes.Insert(sqlConnectionString, nome, cargo, email);
+            Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
+            Thread.Sleep(1500); 
+        }catch(Exception ex)
+        {
+            Console.WriteLine("Não foi possível inserir os dados no banco.");
+            Console.WriteLine("Erro: {0}", ex.Message);
+            Console.WriteLine("Pressione qualquer tecla para continuar.");
+            Console.ReadLine();
+        }
+          
     }
     
 }
