@@ -50,10 +50,10 @@ ________________
         Console.WriteLine("5 - Sair"); 
     }
 
-    public static void Insert(SqlConnection sqlConnection)
+    public static void Insert(string sqlConnectionString)
     {
         Console.WriteLine(Titulo("Insert"));
-                
+        
         Console.WriteLine("Digite o nome do usuário: ");
         string nome = Console.ReadLine();
                 
@@ -69,7 +69,7 @@ ________________
         Thread.Sleep(950);
         Console.WriteLine(".");
         Thread.Sleep(850);
-        int linhasAfetadas = SQLOperacoes.Insert(/*sqlConnection*/nome, cargo, email);
+        int linhasAfetadas = SQLOperacoes.Insert(sqlConnectionString, nome, cargo, email);
         Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
         Thread.Sleep(1500);   
     }
