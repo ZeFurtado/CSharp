@@ -19,11 +19,11 @@ public class Program()
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
 
-        string[] enderecos = new string[]{"http://www.google.com.br","http://www.microsoft.com","http://www.g1.com.br"};
+        string[] enderecos = {"http://www.google.com.br","http://www.microsoft.com","http://www.g1.com.br"};
 
         WebClient webClient = new WebClient();
 
-        var listaEnderecos = from end in enderecos select DownloadPagina(end, out sites);
+        var listaEnderecos = from end in enderecos select DownloadPagina(end);
 
         Task.WaitAll(listaEnderecos.ToArray());
 
@@ -47,7 +47,8 @@ public class Program()
     static async Task DownloadPagina(string end)
     {
         WebClient webClient = new WebClient();
-        sites.Add(await webClient.DownloadStringTaskAsync(end));
+        var html = webClient.DownloadStringTaskAsync(end);
         Console.WriteLine("Download Realizado para a página: " + end);
     }
-}
+
+} 
