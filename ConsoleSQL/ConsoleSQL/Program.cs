@@ -52,6 +52,10 @@ public class Program
                     Console.WriteLine(sqlConnectionString);  
                  break;
 
+                case 2:
+                    Menu.Edit(sqlConnectionString);
+                    break;
+
                 case 5:
                     opcao = 5;
                  break;
