@@ -7,6 +7,28 @@ Merge the two lists into one sorted list. The list should be made by splicing to
 
 Return the head of the merged linked list.
 
+Input: list1 = [1,2,4], list2 = [1,3,4]
+Output: [1,1,2,3,4,4]
+
+Example 2:
+
+Input: list1 = [], list2 = []
+Output: []
+
+Example 3:
+
+Input: list1 = [], list2 = [0]
+Output: [0]
+
+ 
+
+Constraints:
+
+    The number of nodes in both lists is in the range [0, 50].
+    -100 <= Node.val <= 100
+    Both list1 and list2 are sorted in non-decreasing order.
+
+
 
 
 
@@ -16,15 +38,9 @@ class Program
 {
     public static void Main(string[] args)
     {
-        for(int i = 0; i <= new Random().Next(0, 50); i++)
-        {
-            
-        }
-    }
-
-    public List<int> SortedList(List<int> list1, List<int> list2)
-    {
-            
+        ListNode node3 = new ListNode(3);
+        ListNode node2 = new ListNode(2, node3);
+        ListNode node1 = new ListNode(1, node2);
     }
 }
 
@@ -33,7 +49,7 @@ public class ListNode
 {
     public int val;
     public ListNode next;
-    public ListNode(int val=0, ListNode next=null)
+    public ListNode(int val = 0, ListNode next=null)
     {
       this.val = val;
       this.next = next; 
