@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Data.SqlTypes;
 using System.Dynamic;
 using Microsoft.Data.SqlClient;
@@ -83,6 +84,60 @@ ________________
             Console.ReadLine();
         }
           
+    }
+
+    public static void Edit(string sqlConnectionString)
+    {
+        int opcao = 0;
+        string data;
+        int id;
+
+        Console.Clear();
+        Console.WriteLine(Titulo("Editar"));
+        Console.WriteLine("Escolha o campo que você deseja editar.");
+        Console.WriteLine("1 - Nome");
+        Console.WriteLine("2 - Cargo");
+        Console.WriteLine("3 - Email");
+
+        while(opcao != 4)
+        {
+            switch(opcao)
+            {
+                case 1:
+                    try
+                    {
+                        Console.WriteLine("Digite o nome a ser inserido.");
+                        data = Console.ReadLine();
+
+                        Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
+                        id = int.Parse(Console.ReadLine());
+                    }catch(Exception ex)
+                    {
+                        Console.WriteLine("Não foi possível realizar a operação.");
+                        Console.WriteLine("Mensagem: {0}", ex.Message);
+                    }
+                    
+                 break;
+
+                case 2:
+
+                 break;
+                case 3:
+
+                 break;
+
+                case 4:
+
+                 break;
+
+                default:
+                    Console.WriteLine("Opção {0} não existe ", opcao);
+
+                 break;
+            }
+                
+        }
+
     }
     
 }
