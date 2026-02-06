@@ -29,7 +29,7 @@ public class SQLOperacoes
         }
     }
 
-    public static int Insert(string connectionString, params string[] valores) //Método retorna a quantidade de linhas alteradas pelo comando SQL
+    public static int Insert(string sqlConnectionString, params string[] valores) //Método retorna a quantidade de linhas alteradas pelo comando SQL
     {
         StringBuilder comando = new StringBuilder();
         comando.Append("INSERT INTO Usuarios VALUES (");
@@ -52,7 +52,7 @@ public class SQLOperacoes
         comando.Append(" );");
         
         int linhasAfetadas = 0;
-        using(SqlConnection connection = new SqlConnection(connectionString))
+        using(SqlConnection connection = new SqlConnection(sqlConnectionString))
         {
             using(SqlCommand sqlCommand = new SqlCommand(comando.ToString(), connection))
             {
@@ -61,5 +61,10 @@ public class SQLOperacoes
             }
         }
         return linhasAfetadas;
+    }
+
+    public static int Edit(string sqlConnectionString, string data,int id)
+    {
+        return 1;
     }
 }
