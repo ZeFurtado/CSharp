@@ -47,12 +47,12 @@ public class Program
             switch(opcao)
             {
                 case 1: 
-                    Menu.Insert(sqlConnectionString);
+                    Menu.InsertScreen(sqlConnectionString);
                     Console.WriteLine(sqlConnectionString);  
                  break;
 
                 case 2:
-                    Menu.Edit(sqlConnectionString);
+                    Menu.EditScreen(sqlConnectionString);
                     break;
 
                 case 5:

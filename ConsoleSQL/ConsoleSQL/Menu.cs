@@ -51,7 +51,7 @@ ________________
         Console.WriteLine("5 - Sair"); 
     }
 
-    public static void Insert(string sqlConnectionString)
+    public static void InsertScreen(string sqlConnectionString)
     {
         Console.Clear();
         Console.WriteLine(Titulo("Insert"));
@@ -86,7 +86,7 @@ ________________
           
     }
 
-    public static void Edit(string sqlConnectionString)
+    public static void EditScreen(string sqlConnectionString)
     {
         string data;
         int id;
