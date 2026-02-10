@@ -63,8 +63,22 @@ public class SQLOperacoes
         return linhasAfetadas;
     }
 
-    public static int Edit(string sqlConnectionString, string data,int id)
+    public static int Edit(string sqlConnectionString, string tabela, string campo, string data,int id)
     {
-        return 1;
+        int linhasAfetadas;
+        StringBuilder comando = new StringBuilder();
+
+        comando.Append($"UPDATE {tabela} SET {campo} = '{data}' WHERE id = {id}");
+
+        using(SqlConnection sqlConnection = new SqlConnection(sqlConnectionString))
+        {
+            using(SqlCommand sqlCommand = new SqlCommand(comando.ToString(), sqlConnection))
+            {
+                sqlConnection.Open();
+                linhasAfetadas = sqlCommand.ExecuteNonQuery();
+            }
+        }
+
+        return linhasAfetadas;
     }
 }
