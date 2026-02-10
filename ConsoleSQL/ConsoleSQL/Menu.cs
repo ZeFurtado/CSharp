@@ -88,7 +88,6 @@ ________________
 
     public static void Edit(string sqlConnectionString)
     {
-        int opcao = 0;
         string data;
         int id;
 
@@ -98,6 +97,7 @@ ________________
         Console.WriteLine("1 - Nome");
         Console.WriteLine("2 - Cargo");
         Console.WriteLine("3 - Email");
+        int opcao = int.Parse(Console.ReadLine());
 
         while(opcao != 4)
         {
@@ -111,6 +111,19 @@ ________________
 
                         Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
                         id = int.Parse(Console.ReadLine());
+
+                        Console.Write("\aExecutando alterações no banco de dados.");
+                        Thread.Sleep(950);
+                        Console.Write(".");
+                        Thread.Sleep(950);
+                        Console.WriteLine(".");
+                        Thread.Sleep(850);
+
+                        int linhasAfetadas = SQLOperacoes.Edit(sqlConnectionString, "Usuarios", "nome", data, id);
+                        Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
+                        Console.WriteLine("Deseja continuar editando? y/n");
+                        string option = Console.ReadLine();
+                        if(!option.Equals("y")) opcao = 4;
                     }catch(Exception ex)
                     {
                         Console.WriteLine("Não foi possível realizar a operação.");
@@ -120,14 +133,37 @@ ________________
                  break;
 
                 case 2:
+                    try
+                    {
+                       Console.WriteLine("Digite o nome do cargo a ser inserido: ");
+                       data = Console.ReadLine();
 
+                       Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
+                       id = int.Parse(Console.ReadLine()); 
+                    }catch(Exception ex)
+                    {
+                        Console.WriteLine("Não foi possível realizar a operação. ");
+                        Console.WriteLine("Mensagem: {0}", ex.Message);
+                    }
                  break;
-                case 3:
 
+                case 3:
+                    try
+                    {
+                       Console.WriteLine("Digite o nome do Email a ser inserido: ");
+                       data = Console.ReadLine();
+
+                       Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
+                       id = int.Parse(Console.ReadLine()); 
+                    }catch(Exception ex)
+                    {
+                        Console.WriteLine("Não foi possível realizar a operação. ");
+                        Console.WriteLine("Mensagem: {0}", ex.Message);
+                    }
                  break;
 
                 case 4:
-
+                    opcao = 4;
                  break;
 
                 default:
