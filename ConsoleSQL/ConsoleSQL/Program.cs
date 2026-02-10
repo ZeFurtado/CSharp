@@ -9,7 +9,6 @@ public class Program
     {
         for(int t = 1; t < 4; t++)
         {
-            int opcao = 0;
             string sqlConnectionString;
             Console.Clear();
             Menu.Login();
