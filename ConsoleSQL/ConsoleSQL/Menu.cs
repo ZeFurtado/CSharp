@@ -139,7 +139,20 @@ ________________
                        data = Console.ReadLine();
 
                        Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
-                       id = int.Parse(Console.ReadLine()); 
+                       id = int.Parse(Console.ReadLine());
+
+                       Console.Write("\aExecutando alterações no banco de dados.");
+                       Thread.Sleep(950);
+                       Console.Write(".");
+                       Thread.Sleep(950);
+                       Console.WriteLine(".");
+                       Thread.Sleep(850);
+
+                       int linhasAfetadas = SQLOperacoes.Edit(sqlConnectionString, "Usuarios", "cargo", data, id);
+                       Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
+                       Console.WriteLine("Deseja continuar editando? y/n");
+                       string option = Console.ReadLine();
+                       if(!option.Equals("y")) opcao = 4;
                     }catch(Exception ex)
                     {
                         Console.WriteLine("Não foi possível realizar a operação. ");
@@ -155,6 +168,19 @@ ________________
 
                        Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
                        id = int.Parse(Console.ReadLine()); 
+
+                       Console.Write("\aExecutando alterações no banco de dados.");
+                       Thread.Sleep(950);
+                       Console.Write(".");
+                       Thread.Sleep(950);
+                       Console.WriteLine(".");
+                       Thread.Sleep(850);
+
+                       int linhasAfetadas = SQLOperacoes.Edit(sqlConnectionString, "Usuarios", "email", data, id);
+                       Console.WriteLine("O comando alterou {0} linha/s", linhasAfetadas);
+                       Console.WriteLine("Deseja continuar editando? y/n");
+                       string option = Console.ReadLine();
+                       if(!option.Equals("y")) opcao = 4;
                     }catch(Exception ex)
                     {
                         Console.WriteLine("Não foi possível realizar a operação. ");
