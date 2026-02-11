@@ -81,4 +81,28 @@ public class SQLOperacoes
 
         return linhasAfetadas;
     }
+
+    public static string Select(string sqlConnectionString)
+    {
+        string comando = "SELECT * FROM Usuarios";
+        StringBuilder resultado = new StringBuilder();
+        resultado.Append("ID | Nome | Cargo | Email ");
+
+        using(SqlConnection sqlConnection = new SqlConnection(sqlConnectionString))
+        {
+            using(SqlCommand sqlCommand = new SqlCommand(comando, sqlConnection))
+            {
+                sqlConnection.Open();
+                using(SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while(sqlDataReader.Read())
+                    {
+                        resultado.Append("\n" + string.Format("{0}| {1} | {2} | {3}", sqlDataReader[0], sqlDataReader[1], sqlDataReader[2], sqlDataReader[3]));
+                    }
+                }
+            }
+        }
+
+        return resultado.ToString();
+    }
 }
