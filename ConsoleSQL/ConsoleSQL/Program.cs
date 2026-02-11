@@ -55,6 +55,10 @@ public class Program
                     Menu.EditScreen(sqlConnectionString);
                     break;
 
+                case 3:
+                    Menu.SelectScreen(sqlConnectionString);
+                    break;
+
                 case 5:
                     opcao = 5;
                  break;
