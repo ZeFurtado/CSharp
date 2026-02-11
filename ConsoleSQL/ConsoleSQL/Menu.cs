@@ -205,16 +205,19 @@ ________________
     public static void SelectScreen(string sqlConnectionString)
     {
         Console.WriteLine(Titulo("Consulta"));
-
-        string comando = "SELECT * FROM Usuarios";
-
-        using(SqlConnection sqlConnection = new SqlConnection(sqlConnectionString))
+        
+        try
         {
-            using(SqlCommand sqlCommand = new SqlCommand(comando, sqlConnection))
-            {
-                sqlConnection.Open();
-            }
+            Console.WriteLine(SQLOperacoes.Select(sqlConnectionString));   
+        }catch(Exception ex)
+        {
+            Console.WriteLine("Não foi possível exibir os dados");
+            Console.WriteLine("Mensagem erro: {0}", ex.Message);
         }
+
+        Console.WriteLine("Pressione qualquer tecla para continuar.");
+        Console.ReadLine();
+
     }
     
 }
