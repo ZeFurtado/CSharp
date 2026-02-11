@@ -201,5 +201,20 @@ ________________
         }
 
     }
+
+    public static void SelectScreen(string sqlConnectionString)
+    {
+        Console.WriteLine(Titulo("Consulta"));
+
+        string comando = "SELECT * FROM Usuarios";
+
+        using(SqlConnection sqlConnection = new SqlConnection(sqlConnectionString))
+        {
+            using(SqlCommand sqlCommand = new SqlCommand(comando, sqlConnection))
+            {
+                sqlConnection.Open();
+            }
+        }
+    }
     
 }
