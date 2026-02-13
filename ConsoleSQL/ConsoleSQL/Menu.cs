@@ -90,15 +90,18 @@ ________________
     {
         string data;
         int id;
-
         Console.Clear();
         Console.WriteLine(Titulo("Editar"));
+        Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
+        id = int.Parse(Console.ReadLine());
+    
         Console.WriteLine("Escolha o campo que você deseja editar.");
         Console.WriteLine("1 - Nome");
         Console.WriteLine("2 - Cargo");
         Console.WriteLine("3 - Email");
         int opcao = int.Parse(Console.ReadLine());
-
+        
+        
         while(opcao != 4)
         {
             switch(opcao)
@@ -108,9 +111,6 @@ ________________
                     {
                         Console.WriteLine("Digite o nome a ser inserido.");
                         data = Console.ReadLine();
-
-                        Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
-                        id = int.Parse(Console.ReadLine());
 
                         Console.Write("\aExecutando alterações no banco de dados.");
                         Thread.Sleep(950);
@@ -138,9 +138,6 @@ ________________
                        Console.WriteLine("Digite o nome do cargo a ser inserido: ");
                        data = Console.ReadLine();
 
-                       Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
-                       id = int.Parse(Console.ReadLine());
-
                        Console.Write("\aExecutando alterações no banco de dados.");
                        Thread.Sleep(950);
                        Console.Write(".");
@@ -165,9 +162,6 @@ ________________
                     {
                        Console.WriteLine("Digite o nome do Email a ser inserido: ");
                        data = Console.ReadLine();
-
-                       Console.WriteLine("Digite o ID do usuário que precisa ser alterado");
-                       id = int.Parse(Console.ReadLine()); 
 
                        Console.Write("\aExecutando alterações no banco de dados.");
                        Thread.Sleep(950);
