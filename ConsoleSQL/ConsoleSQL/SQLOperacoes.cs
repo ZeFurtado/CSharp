@@ -105,4 +105,19 @@ public class SQLOperacoes
 
         return resultado.ToString();
     }
+
+    public static int Delete(string sqlConnectionString, int id)
+    {
+        string comandoSQL = $"DELETE FROM Usuarios WHERE id = {id}";
+
+        using(SqlConnection sqlConnection = new SqlConnection(sqlConnectionString))
+        {
+            using(SqlCommand command = new SqlCommand(comandoSQL, sqlConnection))
+            {
+                sqlConnection.Open();
+
+                return command.ExecuteNonQuery();
+            }
+        }
+    }
 }
