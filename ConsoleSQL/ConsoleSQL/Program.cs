@@ -47,19 +47,83 @@ public class Program
             switch(opcao)
             {
                 case 1: 
-                    Menu.InsertScreen(sqlConnectionString);  
+                    try
+                    {
+                        Menu.InsertScreen(sqlConnectionString);
+                    }catch(FormatException ex)
+                    {
+                        Console.WriteLine("O caracter informado não é válido!");
+                        Console.WriteLine("Fonte: {0}", ex.Source);
+                        Console.WriteLine("Digite qualquer tecla para continuar.");
+                        Console.ReadLine();
+                    }catch(Exception ex)
+                    {
+                        Console.WriteLine("Ocorreu um problema durante a execução da tarefa.");
+                        Console.WriteLine("Mensagem: {0}", ex.Message);
+                        Console.WriteLine("Fonte: {0}", ex.Source);
+                        Console.WriteLine("Digite qualquer tecla para continuar.");
+                        Console.ReadLine();                        
+                    }
                  break;
 
                 case 2:
-                    Menu.EditScreen(sqlConnectionString);
+                    try
+                    {
+                        Menu.EditScreen(sqlConnectionString);
+                    }catch(FormatException ex)
+                    {
+                        Console.WriteLine("O caracter informado não é válido!");
+                        Console.WriteLine("Fonte: {0}", ex.Source);
+                        Console.WriteLine("Digite qualquer tecla para continuar.");
+                        Console.ReadLine();
+                    }catch(Exception ex)
+                    {
+                        Console.WriteLine("Ocorreu um problema durante a execução da tarefa.");
+                        Console.WriteLine("Mensagem: {0}", ex.Message);
+                        Console.WriteLine("Fonte: {0}", ex.Source);
+                        Console.WriteLine("Digite qualquer tecla para continuar.");
+                        Console.ReadLine();                        
+                    }
                     break;
 
                 case 3:
-                    Menu.SelectScreen(sqlConnectionString);
+                    try
+                    {
+                        Menu.SelectScreen(sqlConnectionString);
+                    }catch(FormatException ex)
+                    {
+                        Console.WriteLine("O caracter informado não é válido!");
+                        Console.WriteLine("Fonte: {0}", ex.Source);
+                        Console.WriteLine("Digite qualquer tecla para continuar.");
+                        Console.ReadLine();
+                    }catch(Exception ex)
+                    {
+                        Console.WriteLine("Ocorreu um problema durante a execução da tarefa.");
+                        Console.WriteLine("Mensagem: {0}", ex.Message);
+                        Console.WriteLine("Fonte: {0}", ex.Source);
+                        Console.WriteLine("Digite qualquer tecla para continuar.");
+                        Console.ReadLine();                        
+                    }
                     break;
 
                 case 4:
-                    Menu.DeleteScreen(sqlConnectionString);
+                    try
+                    {
+                        Menu.DeleteScreen(sqlConnectionString);
+                    }catch(FormatException ex)
+                    {
+                        Console.WriteLine("O caracter informado não é válido!");
+                        Console.WriteLine("Fonte: {0}", ex.Source);
+                        Console.WriteLine("Digite qualquer tecla para continuar.");
+                        Console.ReadLine();
+                    }catch(Exception ex)
+                    {
+                        Console.WriteLine("Ocorreu um problema durante a execução da tarefa.");
+                        Console.WriteLine("Mensagem: {0}", ex.Message);
+                        Console.WriteLine("Fonte: {0}", ex.Source);
+                        Console.WriteLine("Digite qualquer tecla para continuar.");
+                        Console.ReadLine();                        
+                    }
                     break;
 
                 case 5:
