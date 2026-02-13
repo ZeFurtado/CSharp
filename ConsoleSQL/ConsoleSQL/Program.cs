@@ -47,8 +47,7 @@ public class Program
             switch(opcao)
             {
                 case 1: 
-                    Menu.InsertScreen(sqlConnectionString);
-                    Console.WriteLine(sqlConnectionString);  
+                    Menu.InsertScreen(sqlConnectionString);  
                  break;
 
                 case 2:
