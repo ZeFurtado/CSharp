@@ -58,6 +58,10 @@ public class Program
                     Menu.SelectScreen(sqlConnectionString);
                     break;
 
+                case 4:
+                    Menu.DeleteScreen(sqlConnectionString);
+                    break;
+
                 case 5:
                     opcao = 5;
                  break;
