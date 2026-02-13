@@ -220,4 +220,34 @@ ________________
 
     }
     
+    public static void DeleteScreen(string sqlConnectionString)
+    {
+        Console.WriteLine(Menu.Titulo("Deletar"));
+        Console.WriteLine("Digite o ID do usuário que você deseja deletar: ");
+        int id = int.Parse(Console.ReadLine());
+
+        try
+        {
+            Console.Write("\aExecutando alterações no banco de dados.");
+                        Thread.Sleep(950);
+                        Console.Write(".");
+                        Thread.Sleep(950);
+                        Console.WriteLine(".");
+                        Thread.Sleep(850);
+            int linhasAfetadas = SQLOperacoes.Delete(sqlConnectionString, id);
+            Console.WriteLine("O comando afetou {0} linha/s", linhasAfetadas);
+            Console.WriteLine("Deseja deletar mais algum usuário? y/n");
+            string option = Console.ReadLine(); 
+            if(option.Equals("y") || option.Equals("Y")) Menu.DeleteScreen(sqlConnectionString);
+        }catch(Exception ex)
+        {
+            Console.WriteLine("Não foi possível deletar o usuário");
+            Console.WriteLine("Mensagem: {0}", ex.Message);
+            Thread.Sleep(1500);
+            Console.WriteLine("Pressione qualquer tecla para continuar..");
+            Console.ReadLine();
+        }
+
+    }
+
 }
