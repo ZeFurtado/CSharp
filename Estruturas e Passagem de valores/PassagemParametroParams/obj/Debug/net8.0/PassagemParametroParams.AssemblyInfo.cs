@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PassagemParametroParams")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a39556d7ecfd9c0a8e81f68ec61277f6f003edb7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb169055d7e28e75ac860c5687bddd83f8551ded")]
 [assembly: System.Reflection.AssemblyProductAttribute("PassagemParametroParams")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PassagemParametroParams")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
