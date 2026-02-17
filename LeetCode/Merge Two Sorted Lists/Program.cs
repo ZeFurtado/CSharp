@@ -38,9 +38,17 @@ class Program
 {
     public static void Main(string[] args)
     {
-        ListNode node3 = new ListNode(3);
-        ListNode node2 = new ListNode(2, node3);
-        ListNode node1 = new ListNode(1, node2);
+        ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(3)));
+
+        ExibeNode(list1);
+    }
+
+
+    public static bool ExibeNode(ListNode node)
+    {
+        Console.WriteLine("Val: {0} ", node.val);
+        if(node.next == null) return false;
+        return ExibeNode(node.next);
     }
 }
 
