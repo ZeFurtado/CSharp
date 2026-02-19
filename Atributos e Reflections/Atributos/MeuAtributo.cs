@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Atributos;
 
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Method)]
