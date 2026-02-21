@@ -14,33 +14,20 @@ public class Resx
     public string Value{get;set;}
     public string Comment{get;set;}
 
-    public static void AddToFile(Resx resxObject)
+    public static void AddToFile(Resx resxObject, string filePath)
     {
+        if(!File.Exists(filePath)) XmlWriter.Create(filePath); 
 
-        XmlSerializer xmlSerializer = new XmlSerializer(typeof(Resx));
-                
-        
-        StreamWriter streamWriter = new StreamWriter(@"/home/lukhas/repo/CSharp/Atributos e Reflections/02_Validacao/Idiomas/Idiomas.xml");
-
-
-        xmlSerializer.Serialize(streamWriter, resxObject);
-    }
-
-    public static string CheckFile()
-    {
         try
         {
-            if(!File.Exists("/home/lukhas/repo/CSharp/Atributos e Reflections/02_Validacao/Idiomas/Idiomas.xml"))
+            using(StreamWriter streamWriter = new StreamWriter(filePath))
             {
-                XmlWriter.Create("/home/lukhas/repo/CSharp/Atributos e Reflections/02_Validacao/Idiomas/Idiomas.xml");
-                return "O arquivo foi criado!";
-            }    
-        
-        return "O arquivo existe";
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(Resx));
+                xmlSerializer.Serialize(streamWriter, resxObject);
+            }
         }catch(Exception ex)
         {
-            Console.WriteLine("Mensagem ERRO: {0}", ex.Message);
-            return "";
+            Console.WriteLine("|Resx.AddToFile()|  Mensagem ERRO: {0}", ex.Message);            
         }
         
     }
