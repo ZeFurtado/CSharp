@@ -1,6 +1,7 @@
 using System.ComponentModel;
 using System.Resources;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.Marshalling;
 using System.Xml;
 using System.Xml.Serialization;
 using static System.Xml.XmlTextWriter;
@@ -31,4 +32,22 @@ public class Resx
         }
         
     }
+
+    
+    public static Resx Deserializacao()
+    {
+        try
+        {
+            using(StreamReader stream = new StreamReader("/home/lukhas/repo/CSharp/Atributos e Reflections/02_Validacao/Idiomas/Idiomas.xml"))
+            {
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(Resx));
+                return (Resx)xmlSerializer.Deserialize(stream);
+            }
+        }catch(Exception ex)
+        {
+            Console.WriteLine("|Resx.Deserializacao()| Mensagem ERRO: {0}", ex.Message);
+            return new Resx{Name="", Value="", Comment=""};
+        } 
+    }
+    
 }
