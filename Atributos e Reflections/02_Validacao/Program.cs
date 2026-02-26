@@ -1,4 +1,5 @@
 ﻿using _02_Validacao.Idiomas;
+using System.ComponentModel.DataAnnotations;
 
 namespace _02_Validacao;
 
@@ -6,16 +7,18 @@ public class Program
 {
     static void Main(string[] args)
     {
+        Usuario usuario = new Usuario();
 
-        Console.WriteLine(Resx.CheckFile());
-        Console.ReadLine();
-        
-        try
+
+        ValidationContext context = new ValidationContext(usuario);
+        List<ValidationResult> validationResults = new List<ValidationResult>();
+
+        if(!Validator.TryValidateObject(usuario, context, validationResults))
         {
-            Resx.AddToFile(new Resx{Name="MSG_ERRO", Value="Erro", Comment="Mensagem de Erro"});    
-        }catch(Exception ex)
-        {
-            Console.WriteLine("Mensagem ERRO {0}", ex.Message );
+            foreach(var erro in validationResults)
+            {
+                Console.WriteLine(erro.ErrorMessage);
+            }
         }
         
     }
