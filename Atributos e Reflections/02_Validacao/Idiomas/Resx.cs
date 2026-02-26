@@ -38,7 +38,7 @@ public class Resx
     {
         try
         {
-            using(StreamReader stream = new StreamReader("/home/lukhas/repo/CSharp/Atributos e Reflections/02_Validacao/Idiomas/Idiomas.xml"))
+            using(StreamReader stream = new StreamReader("/home/lukhas/repo/CSharp/Atributos e Reflections/02_Validacao/Idiomas/Idiomas.resx"))
             {
                 XmlSerializer xmlSerializer = new XmlSerializer(typeof(Resx));
                 return (Resx)xmlSerializer.Deserialize(stream);
