@@ -10,6 +10,20 @@ public class Lista<T>
         Tipo = item.GetType();
         Values = new T[]{item};
     }
+    public void AddItem(T item)
+    {
+        T[] NewValues = new T[Values.Length + 1];
+        int index = 0;
+        foreach(T t in Values)
+        {
+            NewValues[index] = t;
+            index++;
+        }
+
+        NewValues[Values.Length] = item;
+        Values = NewValues;
+    }
+
     
 
     public T GetItem(int pos)
