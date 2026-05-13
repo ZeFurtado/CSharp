@@ -54,6 +54,18 @@ public class Lista<T>
         Values = newValues;
     }
 
+    public void RemoveUltimo()
+    {
+        T[] newValues = new T[Values.Length - 1];
+
+        for(int i = 0; i < Values.Length - 1; i++)
+        {
+            newValues[i] = Values[i];
+        }
+
+        Values = newValues;
+    }
+
     public T GetItem(int pos)
     {
         return Values[pos];
