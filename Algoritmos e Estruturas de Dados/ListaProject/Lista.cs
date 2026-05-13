@@ -10,13 +10,21 @@ public class Lista<T>
         Tipo = item.GetType();
         Values = new T[]{item};
     }
-    public void AddItem(T item)
-    {
-        
-    }
+    
 
     public T GetItem(int pos)
     {
         return Values[pos];
     }
+
+    public T[] GetValues()
+    {
+        return Values;
+    }
+
+    public object GetTipo()
+    {
+        return Tipo;
+    }
+
 }
