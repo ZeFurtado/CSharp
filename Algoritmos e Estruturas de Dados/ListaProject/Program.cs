@@ -25,7 +25,21 @@ class Program
         }
 
         listaString.RemoveItem(2);
+        Console.WriteLine("Remove item 2");
+        foreach(string s in listaString.GetValues())
+        {
+            Console.WriteLine("Nome: " + s);
+        }
 
+        listaString.RemovePrimeiro();
+        Console.WriteLine("Remove primeiro item");
+        foreach(string s in listaString.GetValues())
+        {
+            Console.WriteLine("Nome: " + s);
+        }
+
+        listaString.RemoveUltimo();
+        Console.WriteLine("Remove último item");
         foreach(string s in listaString.GetValues())
         {
             Console.WriteLine("Nome: " + s);
