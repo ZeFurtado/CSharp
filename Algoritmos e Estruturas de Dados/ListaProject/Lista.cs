@@ -24,7 +24,22 @@ public class Lista<T>
         Values = NewValues;
     }
 
-    
+    public void RemoveItem(int pos)
+    {
+        T[] newValues = new T[Values.Length - 1];
+        int j = 0;
+
+        for(int i = 0; i < Values.Length; i++)
+        {
+            if(i != pos)
+            {
+                newValues[j] = Values[i]; 
+                j++;
+            }
+        }
+
+        Values = newValues;
+    }
 
     public T GetItem(int pos)
     {
