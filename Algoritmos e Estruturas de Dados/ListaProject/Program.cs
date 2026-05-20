@@ -45,5 +45,12 @@ class Program
             Console.WriteLine("Nome: " + s);
         }
 
+        listaString.Inverter();
+        Console.WriteLine("Inverte a lista");
+        foreach(string s in listaString.GetValues())
+        {
+            Console.WriteLine("Nome: " + s);
+        }
+
     }
 }
