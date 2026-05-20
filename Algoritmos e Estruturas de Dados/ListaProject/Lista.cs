@@ -66,6 +66,20 @@ public class Lista<T>
         Values = newValues;
     }
 
+    public void Inverter()
+    {
+        T[] newValues = new T[Values.Length];
+        int j = 0;
+
+        for(int i = Values.Length - 1; i >=0; i--)
+        {
+            newValues[j] = Values[i];
+            j++;
+        }
+
+        Values = newValues;
+    }
+
     public T GetItem(int pos)
     {
         return Values[pos];
