@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insertion Sort", "Insertion
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaProject", "ListaProject\ListaProject.csproj", "{FAD51537-8E62-40A3-96DF-A01BEB7C139F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArvoreAVL", "ArvoreAVL\ArvoreAVL.csproj", "{25B50CD0-7C5D-48ED-A3EA-6468F041BA03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{FAD51537-8E62-40A3-96DF-A01BEB7C139F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAD51537-8E62-40A3-96DF-A01BEB7C139F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAD51537-8E62-40A3-96DF-A01BEB7C139F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B50CD0-7C5D-48ED-A3EA-6468F041BA03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B50CD0-7C5D-48ED-A3EA-6468F041BA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B50CD0-7C5D-48ED-A3EA-6468F041BA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B50CD0-7C5D-48ED-A3EA-6468F041BA03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
