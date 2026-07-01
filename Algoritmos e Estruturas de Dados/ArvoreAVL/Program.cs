@@ -1,5 +1,11 @@
-﻿namespace ArvoreAVL;
+﻿using System.Diagnostics.Contracts;
 
-public class Program{
-    
+namespace ArvoreAVL;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        
+    }
 }
