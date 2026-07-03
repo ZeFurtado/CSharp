@@ -3,25 +3,59 @@
 public class ArvoreAVL<T>
 {
     private NodoAVL<T> NodoRaiz;
+    public int UltimaChave{get;private set;} 
+    
 
     public ArvoreAVL()
     {
         
     }
 
-    public void Inserir(NodoAVL<T> item)
+    public void Inserir(T item)
     {
-        InserirRecursivo(item);
+        int chave = -1;
+        this.NodoRaiz = InserirRecursivo(this.NodoRaiz, item, chave);
     }
 
-    private void InserirRecursivo(NodoAVL<T> item)
+    private NodoAVL<T> InserirRecursivo(NodoAVL<T> nodoRaiz, T item, int chave)
     {
-        if (NodoRaiz == null)
+        chave++;
+        if(nodoRaiz == null)
         {
-            NodoRaiz = item;
+            return new NodoAVL<T>(item, chave);
         }else
         {
-            item.NodoDireita = item;
+            nodoRaiz.setNodoDireita(InserirRecursivo(nodoRaiz.NodoDireita, item, chave));
+        }
+
+        return nodoRaiz;
+    }
+
+    public void PrintTree()
+    {
+        Console.WriteLine("\n--- Estrutura atual da Árvore AVL ---");
+        this.PrintTreeHelper(this.NodoRaiz, 0);
+        Console.WriteLine("---------------------------------------");
+    }
+
+    private void PrintTreeHelper(NodoAVL<T> nodoAtual, int espaco)
+    {
+        int count = 8;
+        if(nodoAtual != null)
+        {
+            espaco += count;
+            this.PrintTreeHelper(nodoAtual.NodoDireita, espaco);
+            Console.WriteLine();
+
+            for(int i = count; i < espaco; i++)
+            {
+                Console.Write(" ");
+            }
+
+            int fb = nodoAtual.fatorBalanceamento();
+            Console.WriteLine($"({nodoAtual.Chave})[{nodoAtual.Item}] Fb={fb}");
+            this.PrintTreeHelper(nodoAtual.NodoEsquerda, espaco);
         }
     }
+
 }
