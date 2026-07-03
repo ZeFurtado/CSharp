@@ -5,14 +5,14 @@ namespace ArvoreAVL;
 public class NodoAVL<T>
 {
     public T Item{get;set;}
-    public int Chave {get;} = -1; //Outras classes só poderão consultar a chave
-    public NodoAVL<T>? NodoDireita{get;set;}
-    public NodoAVL<T>? NodoEsquerda{get;set;}
+    public int Chave {get;} //Outras classes só poderão consultar a chave
+    public NodoAVL<T>? NodoDireita{get; private set;}
+    public NodoAVL<T>? NodoEsquerda{get; private set;}
 
-    public NodoAVL(T item)
+    public NodoAVL(T item, int chave)
     {
         Item = item;
-        Chave = Chave + 1;
+        Chave = chave;
         NodoDireita = null;
         NodoEsquerda = null;
     }
@@ -36,6 +36,16 @@ public class NodoAVL<T>
     public int fatorBalanceamento()
     {
         return altura(NodoEsquerda) - altura(NodoDireita);
+    }
+
+    public void setNodoDireita(NodoAVL<T> nodoAVL)
+    {
+        NodoDireita = nodoAVL;
+    }
+
+    public void setNodoEsquerda(NodoAVL<T> nodoAVL)
+    {
+        NodoEsquerda = nodoAVL;
     }
 
     
