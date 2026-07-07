@@ -5,7 +5,7 @@ namespace ArvoreAVL;
 public class NodoAVL<T>
 {
     public T Item{get;set;}
-    public int Chave {get;} //Outras classes só poderão consultar a chave
+    public int Chave {get; set;}
     public NodoAVL<T>? NodoDireita{get; private set;}
     public NodoAVL<T>? NodoEsquerda{get; private set;}
 
