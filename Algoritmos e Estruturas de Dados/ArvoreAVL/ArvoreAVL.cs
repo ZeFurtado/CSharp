@@ -33,11 +33,6 @@ public class ArvoreAVL<T>
 
     
     
-    public int MenorChave()
-    {
-        return MenorChave(this.NodoRaiz);
-    }
-
     private int MenorChave(NodoAVL<T> nodoRaiz)
     {
         int chave;
