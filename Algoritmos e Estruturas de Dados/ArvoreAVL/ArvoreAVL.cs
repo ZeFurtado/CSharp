@@ -31,6 +31,25 @@ public class ArvoreAVL<T>
         return nodoRaiz;
     }
 
+    
+    
+    public int MenorChave()
+    {
+        return MenorChave(this.NodoRaiz);
+    }
+
+    private int MenorChave(NodoAVL<T> nodoRaiz)
+    {
+        int chave;
+        for(chave = nodoRaiz.Chave; nodoRaiz.NodoEsquerda != null; nodoRaiz = nodoRaiz.NodoEsquerda)
+        {
+            chave = nodoRaiz.NodoEsquerda.Chave;
+        }
+
+        return chave;
+    }
+    
+
     public void PrintTree()
     {
         Console.WriteLine("\n--- Estrutura atual da Árvore AVL ---");
