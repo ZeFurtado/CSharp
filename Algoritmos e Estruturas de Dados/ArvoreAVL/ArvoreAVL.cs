@@ -30,6 +30,39 @@ public class ArvoreAVL<T>
         return nodoRaiz;
     }
 
+    public void Remover(int chave)
+    {
+        this.RemoverRecursivo(this.NodoRaiz, chave);
+    }
+    
+    private NodoAVL<T> RemoverRecursivo(NodoAVL<T> nodoAVL, int chave)
+    {
+        if(nodoAVL == null)
+        {
+            return null;
+        }else
+        {
+            if(chave < nodoAVL.Chave)
+            {
+                nodoAVL.setNodoEsquerda(RemoverRecursivo(nodoAVL.NodoEsquerda, chave));
+            }else if(chave > nodoAVL.Chave)
+            {
+                nodoAVL.setNodoDireita(RemoverRecursivo(nodoAVL.NodoDireita, chave));
+            }else
+            {
+                if(nodoAVL.NodoEsquerda == null) return nodoAVL.NodoDireita;
+                if(nodoAVL.NodoDireita == null) return nodoAVL.NodoEsquerda;
+
+                //Caso o nodo removido possua filhos o substituto dele será o menor nodo á direita dele;
+                nodoAVL = Busca(MenorChave(nodoAVL.NodoDireita));
+                nodoAVL.setNodoDireita(RemoverRecursivo(nodoAVL.NodoDireita, nodoAVL.Chave));
+            }
+
+            return nodoAVL;
+        }
+    }
+
+
     public NodoAVL<T> Busca(int chave)
     {
         return BuscaRecorsiva(this.NodoRaiz, chave);
