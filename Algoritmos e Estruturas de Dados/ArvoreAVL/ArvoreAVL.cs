@@ -5,7 +5,6 @@ public class ArvoreAVL<T>
     private NodoAVL<T> NodoRaiz;
     public int UltimaChave{get;private set;} 
     
-
     public ArvoreAVL()
     {
         
@@ -31,7 +30,23 @@ public class ArvoreAVL<T>
         return nodoRaiz;
     }
 
-    
+    public NodoAVL<T> Busca(int chave)
+    {
+        return BuscaRecorsiva(this.NodoRaiz, chave);
+    }
+
+    private NodoAVL<T> BuscaRecorsiva(NodoAVL<T> nodoAVL, int chave)
+    {
+        //Verifica se o nodo não é vazio e se a chave do nodoAtual não é a mesma da chave a ser buscada;
+        if(nodoAVL != null && nodoAVL.Chave != chave)
+        {
+            return chave > nodoAVL.Chave ? BuscaRecorsiva(nodoAVL.NodoDireita, chave) : BuscaRecorsiva(nodoAVL.NodoEsquerda, chave);
+        }else
+        {
+            if(nodoAVL != null) Console.WriteLine($"Nodo encontrado: {nodoAVL.Item}");
+            return nodoAVL;
+        }
+    }    
     
     private int MenorChave(NodoAVL<T> nodoRaiz)
     {
