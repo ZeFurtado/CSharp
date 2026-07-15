@@ -120,4 +120,22 @@ public class ArvoreAVL<T>
         }
     }
 
+    private NodoAVL<T> RotacaoSimplesEsquerda(NodoAVL<T> nodoRaiz)
+    {
+        NodoAVL<T> nodoDireita = nodoRaiz.NodoDireita;
+        NodoAVL<T> nodoEsquerda = nodoDireita.NodoEsquerda;
+        nodoDireita.setNodoEsquerda(nodoRaiz);
+        nodoRaiz.setNodoDireita(nodoEsquerda);
+        return nodoDireita; 
+    }
+
+    private NodoAVL<T> RotacaoSimplesDireita(NodoAVL<T> nodoRaiz)
+    {
+        NodoAVL<T> nodoEsquerda = nodoRaiz.NodoEsquerda;
+        NodoAVL<T> nodoDireita = nodoEsquerda.NodoDireita;
+        nodoEsquerda.setNodoDireita(nodoRaiz);
+        nodoRaiz.setNodoEsquerda(nodoDireita);
+        return nodoEsquerda;
+    }
+
 }
