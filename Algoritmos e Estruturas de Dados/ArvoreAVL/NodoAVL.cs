@@ -33,7 +33,7 @@ public class NodoAVL<T>
          
     }
 
-    public int fatorBalanceamento()
+    public int FatorBalanceamento()
     {
         return altura(NodoEsquerda) - altura(NodoDireita);
     }

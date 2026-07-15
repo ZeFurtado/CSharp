@@ -114,7 +114,7 @@ public class ArvoreAVL<T>
                 Console.Write(" ");
             }
 
-            int fb = nodoAtual.fatorBalanceamento();
+            int fb = nodoAtual.FatorBalanceamento();
             Console.WriteLine($"({nodoAtual.Chave})[{nodoAtual.Item}] Fb={fb}");
             this.PrintTreeHelper(nodoAtual.NodoEsquerda, espaco);
         }
