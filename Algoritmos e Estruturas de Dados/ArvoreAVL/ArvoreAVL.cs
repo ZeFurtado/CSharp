@@ -24,7 +24,31 @@ public class ArvoreAVL<T>
             return new NodoAVL<T>(item, chave);
         }else
         {
-            nodoRaiz.setNodoDireita(InserirRecursivo(nodoRaiz.NodoDireita, item, chave));
+            nodoRaiz.setNodoDireita(InserirRecursivo(nodoRaiz.NodoDireita, item, nodoRaiz.Chave));
+        }
+
+        if(nodoRaiz.FatorBalanceamento() <-1 && nodoRaiz.NodoDireita.FatorBalanceamento() <= 0)
+        {
+            Console.WriteLine($"O nodo de chave: {nodoRaiz.Chave} está desbalanceado");
+            Console.WriteLine("Rotação simples para á esquerda");
+            return this.RotacaoSimplesEsquerda(nodoRaiz);
+        }else if(nodoRaiz.FatorBalanceamento() > 1 && nodoRaiz.NodoEsquerda.FatorBalanceamento() >= 0)
+        {
+            Console.WriteLine($"O nodo de chave: {nodoRaiz.Chave} está desbalanceado");
+            Console.WriteLine("Rotação simples para á direita");
+            return this.RotacaoSimplesDireita(nodoRaiz);
+        }else if(nodoRaiz.FatorBalanceamento() <-1 && nodoRaiz.NodoDireita.FatorBalanceamento() > 0)
+        {
+            Console.WriteLine($"O nodo de chave {nodoRaiz.Chave} está desbalanceado");
+            Console.WriteLine("Rotação dupla á esquerda");
+            nodoRaiz.setNodoDireita(this.RotacaoSimplesDireita(nodoRaiz.NodoDireita));
+            return this.RotacaoSimplesEsquerda(nodoRaiz);
+        }else if(nodoRaiz.FatorBalanceamento() > 1 && nodoRaiz.NodoEsquerda.FatorBalanceamento() < 0)
+        {
+            Console.WriteLine($"O nodo de chave: {nodoRaiz.Chave} está desbalanceado");
+            Console.WriteLine("Rotação dupla a direita");
+            nodoRaiz.setNodoEsquerda(this.RotacaoSimplesEsquerda(nodoRaiz.NodoEsquerda));
+            return this.RotacaoSimplesDireita(nodoRaiz);
         }
 
         return nodoRaiz;
