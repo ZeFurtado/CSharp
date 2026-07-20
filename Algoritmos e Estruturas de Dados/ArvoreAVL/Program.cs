@@ -9,10 +9,22 @@ public class Program
         ArvoreAVL<string> arvoreAVL = new ArvoreAVL<string>();
 
         arvoreAVL.Inserir("Jurandir");
-        arvoreAVL.Inserir("Moacir");
-        arvoreAVL.Inserir("Valtencir");
-
         arvoreAVL.PrintTree();
-        Console.WriteLine($"Menor Chave: {arvoreAVL.MenorChave()}");
+
+
+        arvoreAVL.Inserir("Moacir");
+        arvoreAVL.PrintTree();
+
+        arvoreAVL.Inserir("Valtencir");
+        arvoreAVL.PrintTree();
+
+        arvoreAVL.Inserir("Cláudio");
+        arvoreAVL.PrintTree();
+
+        arvoreAVL.Inserir("Cleiton");
+        arvoreAVL.PrintTree();
+
+        arvoreAVL.Inserir("Joniver");
+        arvoreAVL.PrintTree();
     }
 }
