@@ -77,8 +77,10 @@ public class ArvoreAVL<T>
                 if(nodoAVL.NodoEsquerda == null) return nodoAVL.NodoDireita;
                 if(nodoAVL.NodoDireita == null) return nodoAVL.NodoEsquerda;
 
-                //Caso o nodo removido possua filhos o substituto dele será o menor nodo á direita dele;
-                nodoAVL = Busca(MenorChave(nodoAVL.NodoDireita));
+                //Caso o nodo removido possua filhos o substituto dele será o menor nodo á direita dele
+                NodoAVL<T> newNode = Busca(MenorChave(nodoAVL.NodoDireita));
+                nodoAVL.Chave = newNode.Chave;
+                nodoAVL.Item = newNode.Item;
                 nodoAVL.setNodoDireita(RemoverRecursivo(nodoAVL.NodoDireita, nodoAVL.Chave));
             }
 
