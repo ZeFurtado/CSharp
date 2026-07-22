@@ -16,42 +16,42 @@ public class ArvoreAVL<T>
         this.NodoRaiz = InserirRecursivo(this.NodoRaiz, item, chave);
     }
 
-    private NodoAVL<T> InserirRecursivo(NodoAVL<T> nodoRaiz, T item, int chave)
+    private NodoAVL<T> InserirRecursivo(NodoAVL<T> nodoAVL, T item, int chave)
     {
         chave++;
-        if(nodoRaiz == null)
+        if(nodoAVL == null)
         {
             return new NodoAVL<T>(item, chave);
         }else
         {
-            nodoRaiz.setNodoDireita(InserirRecursivo(nodoRaiz.NodoDireita, item, nodoRaiz.Chave));
+            nodoAVL.setNodoDireita(InserirRecursivo(nodoAVL.NodoDireita, item, nodoAVL.Chave));
         }
 
-        if(nodoRaiz.FatorBalanceamento() <-1 && nodoRaiz.NodoDireita.FatorBalanceamento() <= 0)
+        if(nodoAVL.FatorBalanceamento() <-1 && nodoAVL.NodoDireita.FatorBalanceamento() <= 0)
         {
-            Console.WriteLine($"O nodo de chave: {nodoRaiz.Chave} está desbalanceado");
+            Console.WriteLine($"O nodo de chave: {nodoAVL.Chave} está desbalanceado");
             Console.WriteLine("Rotação simples para á esquerda");
-            return this.RotacaoSimplesEsquerda(nodoRaiz);
-        }else if(nodoRaiz.FatorBalanceamento() > 1 && nodoRaiz.NodoEsquerda.FatorBalanceamento() >= 0)
+            return this.RotacaoSimplesEsquerda(nodoAVL);
+        }else if(nodoAVL.FatorBalanceamento() > 1 && nodoAVL.NodoEsquerda.FatorBalanceamento() >= 0)
         {
-            Console.WriteLine($"O nodo de chave: {nodoRaiz.Chave} está desbalanceado");
+            Console.WriteLine($"O nodo de chave: {nodoAVL.Chave} está desbalanceado");
             Console.WriteLine("Rotação simples para á direita");
-            return this.RotacaoSimplesDireita(nodoRaiz);
-        }else if(nodoRaiz.FatorBalanceamento() <-1 && nodoRaiz.NodoDireita.FatorBalanceamento() > 0)
+            return this.RotacaoSimplesDireita(nodoAVL);
+        }else if(nodoAVL.FatorBalanceamento() <-1 && nodoAVL.NodoDireita.FatorBalanceamento() > 0)
         {
-            Console.WriteLine($"O nodo de chave {nodoRaiz.Chave} está desbalanceado");
+            Console.WriteLine($"O nodo de chave {nodoAVL.Chave} está desbalanceado");
             Console.WriteLine("Rotação dupla á esquerda");
-            nodoRaiz.setNodoDireita(this.RotacaoSimplesDireita(nodoRaiz.NodoDireita));
-            return this.RotacaoSimplesEsquerda(nodoRaiz);
-        }else if(nodoRaiz.FatorBalanceamento() > 1 && nodoRaiz.NodoEsquerda.FatorBalanceamento() < 0)
+            nodoAVL.setNodoDireita(this.RotacaoSimplesDireita(nodoAVL.NodoDireita));
+            return this.RotacaoSimplesEsquerda(nodoAVL);
+        }else if(nodoAVL.FatorBalanceamento() > 1 && nodoAVL.NodoEsquerda.FatorBalanceamento() < 0)
         {
-            Console.WriteLine($"O nodo de chave: {nodoRaiz.Chave} está desbalanceado");
+            Console.WriteLine($"O nodo de chave: {nodoAVL.Chave} está desbalanceado");
             Console.WriteLine("Rotação dupla a direita");
-            nodoRaiz.setNodoEsquerda(this.RotacaoSimplesEsquerda(nodoRaiz.NodoEsquerda));
-            return this.RotacaoSimplesDireita(nodoRaiz);
+            nodoAVL.setNodoEsquerda(this.RotacaoSimplesEsquerda(nodoAVL.NodoEsquerda));
+            return this.RotacaoSimplesDireita(nodoAVL);
         }
 
-        return nodoRaiz;
+        return nodoAVL;
     }
 
     public void Remover(int chave)
@@ -84,6 +84,8 @@ public class ArvoreAVL<T>
                 nodoAVL.setNodoDireita(RemoverRecursivo(nodoAVL.NodoDireita, nodoAVL.Chave));
             }
 
+            
+
             return nodoAVL;
         }
     }
@@ -107,12 +109,12 @@ public class ArvoreAVL<T>
         }
     }    
     
-    private int MenorChave(NodoAVL<T> nodoRaiz)
+    private int MenorChave(NodoAVL<T> nodoAVL)
     {
         int chave;
-        for(chave = nodoRaiz.Chave; nodoRaiz.NodoEsquerda != null; nodoRaiz = nodoRaiz.NodoEsquerda)
+        for(chave = nodoAVL.Chave; nodoAVL.NodoEsquerda != null; nodoAVL = nodoAVL.NodoEsquerda)
         {
-            chave = nodoRaiz.NodoEsquerda.Chave;
+            chave = nodoAVL.NodoEsquerda.Chave;
         }
 
         return chave;
@@ -126,13 +128,13 @@ public class ArvoreAVL<T>
         Console.WriteLine("---------------------------------------");
     }
 
-    private void PrintTreeHelper(NodoAVL<T> nodoAtual, int espaco)
+    private void PrintTreeHelper(NodoAVL<T> nodoAVL, int espaco)
     {
         int count = 8;
-        if(nodoAtual != null)
+        if(nodoAVL != null)
         {
             espaco += count;
-            this.PrintTreeHelper(nodoAtual.NodoDireita, espaco);
+            this.PrintTreeHelper(nodoAVL.NodoDireita, espaco);
             Console.WriteLine();
 
             for(int i = count; i < espaco; i++)
@@ -140,27 +142,27 @@ public class ArvoreAVL<T>
                 Console.Write(" ");
             }
 
-            int fb = nodoAtual.FatorBalanceamento();
-            Console.WriteLine($"({nodoAtual.Chave})[{nodoAtual.Item}] Fb={fb}");
-            this.PrintTreeHelper(nodoAtual.NodoEsquerda, espaco);
+            int fb = nodoAVL.FatorBalanceamento();
+            Console.WriteLine($"({nodoAVL.Chave})[{nodoAVL.Item}] Fb={fb}");
+            this.PrintTreeHelper(nodoAVL.NodoEsquerda, espaco);
         }
     }
 
-    private NodoAVL<T> RotacaoSimplesEsquerda(NodoAVL<T> nodoRaiz)
+    private NodoAVL<T> RotacaoSimplesEsquerda(NodoAVL<T> nodoAVL)
     {
-        NodoAVL<T> nodoDireita = nodoRaiz.NodoDireita;
+        NodoAVL<T> nodoDireita = nodoAVL.NodoDireita;
         NodoAVL<T> nodoEsquerda = nodoDireita.NodoEsquerda;
-        nodoDireita.setNodoEsquerda(nodoRaiz);
-        nodoRaiz.setNodoDireita(nodoEsquerda);
+        nodoDireita.setNodoEsquerda(nodoAVL);
+        nodoAVL.setNodoDireita(nodoEsquerda);
         return nodoDireita; 
     }
 
-    private NodoAVL<T> RotacaoSimplesDireita(NodoAVL<T> nodoRaiz)
+    private NodoAVL<T> RotacaoSimplesDireita(NodoAVL<T> nodoAVL)
     {
-        NodoAVL<T> nodoEsquerda = nodoRaiz.NodoEsquerda;
+        NodoAVL<T> nodoEsquerda = nodoAVL.NodoEsquerda;
         NodoAVL<T> nodoDireita = nodoEsquerda.NodoDireita;
-        nodoEsquerda.setNodoDireita(nodoRaiz);
-        nodoRaiz.setNodoEsquerda(nodoDireita);
+        nodoEsquerda.setNodoDireita(nodoAVL);
+        nodoAVL.setNodoEsquerda(nodoDireita);
         return nodoEsquerda;
     }
 
