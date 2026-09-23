@@ -8,54 +8,58 @@ public class Program
     {
         ArvoreAVL<string> arvoreAVL = new ArvoreAVL<string>();
 
-        arvoreAVL.Inserir("Jurandir");
-        arvoreAVL.PrintTree();
+        int opcao = 0;
 
+    
+        while(opcao != 5)
+        {
+            Console.WriteLine(" --- ÁRVORE AVL ---");
+            Console.WriteLine("(1) Adicionar");
+            Console.WriteLine("(2) Remover");
+            Console.WriteLine("(3) Procurar");
+            Console.WriteLine("(4) Imprimir estado atual da árvore");
+            Console.WriteLine("(5) Sair");
 
-        arvoreAVL.Inserir("Moacir");
-        arvoreAVL.PrintTree();
+            try
+            {
+                opcao = int.Parse(Console.ReadLine());
+                switch(opcao)
+                {
+                    case 1:
+                        Console.WriteLine("Adicionar");
+                        arvoreAVL.Inserir(Console.ReadLine());
+                    break;
+                    
+                    case 2:
+                        Console.WriteLine("Digite o número da chave que deseja remover");
+                        arvoreAVL.Remover(int.Parse(Console.ReadLine()));
+                    break;
 
-        arvoreAVL.Inserir("Valtencir");
-        arvoreAVL.PrintTree();
+                    case 3:
+                        Console.WriteLine("Digite um número ou nome para procurar");
+                        arvoreAVL.Busca(int.Parse(Console.ReadLine()));
+                    break;
+                
+                    case 4:
+                        Console.WriteLine("Estado atual da árvore");
+                        arvoreAVL.PrintTree();
+                    break;
+                
+                    case 5:
+                        opcao = 5;
+                    break;
 
-        arvoreAVL.Inserir("Cláudio");
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Inserir("Cleiton");
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Inserir("Joniver");
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Inserir("Cléber");
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Inserir("Hugo");
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Remover(3);
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Inserir("Thiago");
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Inserir("Juliano");
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Inserir("Júlio");
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Inserir("Júnior");
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Inserir("Alvares");
-        arvoreAVL.Inserir("Ricardinho");
-        arvoreAVL.Inserir("Soares");
-
-        arvoreAVL.PrintTree();
-
-        arvoreAVL.Remover(8);
-        arvoreAVL.PrintTree();
-        Console.WriteLine(arvoreAVL.ToString());
+                    default:
+                        Console.WriteLine("Opção inválida");
+                    break;
+            }    
+            }catch(System.FormatException ex)
+            {
+                Console.WriteLine("Digite um número");
+                opcao = 0;
+            }
+            
+        }
+        
     }
 }
