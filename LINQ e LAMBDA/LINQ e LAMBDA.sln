@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Linq_Join", "03_Linq_Joi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Linq_Group", "04_Linq_Group\04_Linq_Group.csproj", "{EBEC34B7-9C54-4E15-AA35-092F987C30EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste", "Teste\Teste.csproj", "{60D93906-7F62-43E9-9524-C0B1BC51EE3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{EBEC34B7-9C54-4E15-AA35-092F987C30EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBEC34B7-9C54-4E15-AA35-092F987C30EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBEC34B7-9C54-4E15-AA35-092F987C30EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D93906-7F62-43E9-9524-C0B1BC51EE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D93906-7F62-43E9-9524-C0B1BC51EE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D93906-7F62-43E9-9524-C0B1BC51EE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D93906-7F62-43E9-9524-C0B1BC51EE3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
